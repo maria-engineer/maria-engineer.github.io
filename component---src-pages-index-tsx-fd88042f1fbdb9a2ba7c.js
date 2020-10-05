@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{QeBL:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return o}));var a=t("q1tI"),r=t.n(a),c=t("Bl7J"),l=t("vrFN");function o(){return r.a.createElement(c.a,{currentPage:"Home"},r.a.createElement(l.a,{title:"Home"}),r.a.createElement("div",{className:"align-items-center"},r.a.createElement("h1",null,"Current Engagements"),r.a.createElement("p",null,"I am currently working as a Software Engineer at Facebook.")))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-fd88042f1fbdb9a2ba7c.js.map
