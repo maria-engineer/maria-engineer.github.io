@@ -1453,5 +1453,36 @@ blockquote {
     padding: 20px 5px;
     font-size: 16px;
   }
+  .lcars-listing {
+    margin: 70px auto;
+    height: 70px;
+    background: #121212;
+    border-left: 35px solid #88f;
+    border-radius: 35px;
+    padding: 0 5px;
+    text-decoration: none;
+  }
+  .lcars-listing-inner {
+    height: 70px;
+    width: 100%;
+    background: #8bf;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 0 35px 35px 0;
+    color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .lcars-listing a {
+    text-decoration: none;
+    font-weight: bold;
+    height: 100%;
+    color: #121212 !important;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
 }
 
