@@ -35,6 +35,33 @@
   }
 }
 
+@keyframes moving-bar {
+  0% {
+    width: "10%";
+    background-color: #fec;
+  }
+  10% {
+    width: "15%";
+    background-color: #fec;
+  }
+  25% {
+    width: "25%";
+    background-color: #fec;
+  }
+  50% {
+    width: "50%";
+    background-color: #fec;
+  }
+  60% {
+    width: "45%";
+    background-color: #fec;
+  }
+  70% {
+    width: "55%";
+    background-color: #fec;
+  }
+}
+
 @keyframes breathing {
   0% {
     border-width: "1px";
@@ -55,20 +82,17 @@
     border-color: "#f70";
   }
   25% {
-    
     border-width: "0 1px 1px 1px";
     border-style: "solid";
     border-color: "#f70";
   }
 
   50% {
-    
     border-width: "1px 1px 1px 0";
     border-style: "solid";
     border-color: "#f70";
   }
   75% {
-    
     border-width: "1px 1px 0 1px";
     border-style: "solid";
     border-color: "#f70";
@@ -1485,4 +1509,3 @@ blockquote {
     padding-left: 10px;
   }
 }
-
