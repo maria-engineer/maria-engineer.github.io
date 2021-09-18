@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b54a953e955b1ef6c0c0.js"
+    "url": "webpack-runtime-0313a2a1b68805dfd963.js"
   },
   {
     "url": "framework-6e0ac133a68a0fe121a6.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "styles.cb60053c386e3f8cd267.css"
   },
   {
-    "url": "app-f97ba0cd63cf212183d9.js"
+    "url": "app-edc0e0a922428c63dbaa.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "42143ff635da4eb091bd70f0fdf60c0e"
+    "revision": "86c30979cf3a47fc1014c3bad1c632fd"
   },
   {
     "url": "lcars.css"
@@ -52,11 +52,11 @@ self.__precacheManifest = [
     "url": "polyfill-bf4c06d136d639c7200a.js"
   },
   {
-    "url": "component---src-pages-blog-js-ad05e72f6ac14fc4660c.js"
+    "url": "component---src-pages-chords-tsx-35513752cde158880e7b.js"
   },
   {
-    "url": "page-data/blog/page-data.json",
-    "revision": "a05fd402b206e02a4a20e5bc3533a0f7"
+    "url": "page-data/chords/page-data.json",
+    "revision": "2b9c06ac47e6a644cc6b4bc928d1a6e2"
   },
   {
     "url": "page-data/sq/d/3649515864.json",
@@ -68,40 +68,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "11f58ec55ff80b4ddb36fb7992649212"
+    "revision": "5670a5e487fa5227735269f734c4f91c"
   },
   {
-    "url": "component---src-templates-blog-post-template-js-3a33955a46d62c5df0ad.js"
-  },
-  {
-    "url": "page-data/blog/finding_a_house/page-data.json",
-    "revision": "9832646724f9eed8bdc232f93aa82895"
-  },
-  {
-    "url": "page-data/blog/house_purchase/page-data.json",
-    "revision": "a9c8a5458f9fc6e8ee78ed023687ca66"
-  },
-  {
-    "url": "page-data/blog/survey-house-purchase/page-data.json",
-    "revision": "db50ea98069d58e3a1c99ed12c4f5af0"
-  },
-  {
-    "url": "page-data/blog/uis_over_clis/page-data.json",
-    "revision": "d753e8cbd0817f5293df9f16d08340c7"
-  },
-  {
-    "url": "page-data/blog/work_life_balance_tips/page-data.json",
-    "revision": "ead7ccf4f7d62a7857897267e1e2cacd"
-  },
-  {
-    "url": "component---src-pages-chords-tsx-a324abe876ec7892a5ce.js"
-  },
-  {
-    "url": "page-data/chords/page-data.json",
-    "revision": "2b9c06ac47e6a644cc6b4bc928d1a6e2"
-  },
-  {
-    "url": "component---src-pages-scales-tsx-2f1860a231842cdc1025.js"
+    "url": "component---src-pages-scales-tsx-9e774147a1c1f31a6bd6.js"
   },
   {
     "url": "page-data/scales/page-data.json",
@@ -201,7 +171,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-f97ba0cd63cf212183d9.js`))) {
+  if (!resources || !(await caches.match(`/app-edc0e0a922428c63dbaa.js`))) {
     return await fetch(event.request)
   }
 
