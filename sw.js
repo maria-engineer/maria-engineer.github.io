@@ -68,7 +68,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "0f818daf2771ac32acbcaaa37cfd6530"
+    "revision": "6f802813b51a86b86092aa60d7a07b4f"
   },
   {
     "url": "component---src-pages-scales-tsx-28c94470b27ed040013f.js"
