@@ -704,9 +704,9 @@ blockquote {
 .buttons a {
   display: block;
   margin: 0 10px 20px 10px;
-  width: 180px;
+  width: 150px;
   height: 58px;
-  padding: 20px 25px 0 0;
+  padding: 20px 20px 20px 20px;
   background: #ccdeff;
   border-radius: 26px;
   text-align: right;
@@ -724,9 +724,9 @@ blockquote {
 .buttons button {
   display: block;
   margin: 0 10px 20px 10px important!;
-  width: 180px;
-  height: 58px important!;
-  padding: 20px 25px 0 0 important!;
+  width: 150px;
+  height: 55px important!;
+  padding: 20px 20px 0 0 important!;
   height: 70px;
   border-radius: 26px;
   border-style: none;
@@ -806,6 +806,9 @@ blockquote {
 }
 .lcars-form-control lcars-is-valid {
   border-color: #9d6;
+}
+.lcars-form-control lcars-big-input {
+  width: auto important!;
 }
 .lcars-form-control lcars-is-invalid {
   border-color: #d44;
@@ -1280,13 +1283,6 @@ blockquote {
     height: 44px;
     padding-top: 10px;
     max-width: 140px;
-    border-radius: 20px;
-    font-size: 19px;
-  }
-  .buttons button {
-    height: 44px;
-    padding-top: 10px;
-    max-width: 100px;
     border-radius: 20px;
     font-size: 19px;
   }
