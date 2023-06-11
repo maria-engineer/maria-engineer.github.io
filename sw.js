@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6ab8696a4a6eb660e7c6.js"
+    "url": "webpack-runtime-c6f35fc36a4853463877.js"
   },
   {
     "url": "framework-37f13dc6a86bc12c8858.js"
@@ -40,7 +40,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "ecdc3e99118582fcebaf0b0b6df9b0f4"
+    "revision": "b0c6227a2048c0799bdae9ddaa0810a5"
   },
   {
     "url": "lcars.css"
@@ -52,10 +52,10 @@ self.__precacheManifest = [
     "url": "polyfill-9da044ee737c8a8bcb4f.js"
   },
   {
-    "url": "72fc6bb42f97f11a3b44bca065a8af8d8b21c776-6609ea369fb84c573f55.js"
+    "url": "72fc6bb42f97f11a3b44bca065a8af8d8b21c776-b6e4306d7bc1a35084eb.js"
   },
   {
-    "url": "component---src-pages-chords-tsx-2bb362d35b12ce2898aa.js"
+    "url": "component---src-pages-chords-tsx-adc4c590f634ed292a5a.js"
   },
   {
     "url": "page-data/chords/page-data.json",
@@ -71,10 +71,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "a738472282ff70d81339326f5e399da2"
+    "revision": "3c8b1b0535aa75d39b7e69b6d0ad3b7d"
   },
   {
-    "url": "component---src-pages-scales-tsx-9283510a0da059cf25be.js"
+    "url": "component---src-pages-scales-tsx-78457973c03ed8f6b1ba.js"
   },
   {
     "url": "page-data/scales/page-data.json",
