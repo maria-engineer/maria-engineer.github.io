@@ -525,10 +525,6 @@ a {
   background: #121212;
   border-radius: 30px 0 0 0;
 }
-.content {
-  padding: 0 0 25px 50px;
-  background: #121212;
-}
 .content img {
   max-width: 100%;
   height: auto;
@@ -700,45 +696,6 @@ blockquote {
 }
 .space-between {
   justify-content: space-between;
-}
-.buttons a {
-  display: block;
-  margin: 0 10px 20px 10px;
-  width: 150px;
-  height: 58px;
-  padding: 20px 20px 20px 20px;
-  background: #ccdeff;
-  border-radius: 26px;
-  text-align: right;
-  line-height: normal;
-  text-decoration: none;
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #121212;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.buttons button {
-  display: block;
-  margin: 0 10px 20px 10px important!;
-  width: 150px;
-  height: 55px important!;
-  padding: 20px 20px 0 0 important!;
-  height: 70px;
-  border-radius: 26px;
-  border-style: none;
-  text-align: center important!;
-  text-decoration: none;
-  text-transform: none;
-  font-size: 21px important!;
-  font-weight: 700 important!;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .buttons a:active,
 .buttons a:focus {
