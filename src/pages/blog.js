@@ -1,42 +1,62 @@
-import React from "react"
-import { graphql, Link } from "gatsby";
+import React from "react";
+import { graphql, navigate } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Listing } from "../components/commonStyles";
 
-export default function BlogPage ({
-    data: {
-      allMarkdownRemark: { edges },
-    },
-  }) {
-  return (<Layout currentPage="Blog">
-    <SEO title="Blog" />
-    <h1>All posts</h1>
-    <table className="table">
-  <thead>
-    <tr>
-      <th scope="col">Article</th>
-      <th scope="col">Date</th>
-      <th scope="col">Category</th>
-    </tr>
-  </thead>
-  <tbody>
-    {edges.map(edge => edge == null  || edge.node == null? null : <tr key={edge.node.id}>
-      <th scope="row"><Link to={edge.node.frontmatter.slug}>
-      {edge.node.frontmatter.title}
-    </Link></th>
-      <td>{edge.node.frontmatter.date}</td>
-      <td>{edge.node.frontmatter.category}</td>
-    </tr> )}
-    
-  </tbody>
-</table>
-  </Layout>);
-  }
+export default function BlogPage({
+  data: {
+    allMdx: { edges },
+  },
+}) {
+  const posts = edges
+    .map((edge) => edge?.node?.frontmatter)
+    .filter((edge) => edge != null);
+  const postByLog = posts.reduce((acc, value) => {
+    if (!acc[value.category]) {
+      acc[value.category] = [];
+    }
 
-  export const pageQuery = graphql`
+    acc[value.category].push(value);
+
+    return acc;
+  }, {});
+
+  return (
+    <Layout currentPage="Maria" currentSubPage="Blog">
+      <SEO title="Blog" />
+      <h2>Engineering Log</h2>
+      {postByLog["engineer"]?.map((post, index) => (
+        <Listing
+          role="link"
+          key={"engineer" + index}
+          onClick={() => navigate(post.slug)}
+          aria-label={"Navigate to the blog post: " + post.title}
+        >
+          <div>{post.title}</div>
+          <div>{post.date}</div>
+        </Listing>
+      ))}
+      <h2>Personal Log</h2>
+      {postByLog["personal"]?.map((post, index) => (
+        <Listing
+          role="link"
+          key={"personal" + index}
+          onClick={() => navigate(post.slug)}
+          aria-label={"Navigate to the blog post: " + post.title}
+        >
+          <div>{post.title}</div>
+          <div>{post.date}</div>
+        </Listing>
+      ))}
+    </Layout>
+  );
+}
+
+export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           id
@@ -49,4 +69,5 @@ export default function BlogPage ({
         }
       }
     }
-  }`;
+  }
+`;
