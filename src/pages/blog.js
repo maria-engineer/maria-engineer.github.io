@@ -24,7 +24,7 @@ export default function BlogPage({
   }, {});
 
   return (
-    <Layout currentPage="Maria" currentSubPage="Blog">
+    <Layout currentPage="Blog" >
       <SEO title="Blog" />
       <h2>Engineering Log</h2>
       {postByLog["engineer"]?.map((post, index) => (

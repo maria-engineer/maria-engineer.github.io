@@ -52,8 +52,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        output: `./maria-sitemap.xml/`,
-        host: "https://maria.engineer",
         query: `
         {
           allSitePage {

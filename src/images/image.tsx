@@ -16,3 +16,15 @@ export default function ProfileImage() {
     />
   );
 }
+
+export function MusicImage() {
+  return (
+    <StaticImage
+      object={"cover"}
+      border-radius={"20px"}
+      width={240}
+      height={200}
+      src={"./chords.png"}
+    />
+  );
+}

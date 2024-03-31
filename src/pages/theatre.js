@@ -38,13 +38,15 @@ export default function TheatrePage({
     ["Greece", "Lysistrata - Aristophanes"],
     ["Iran", "White Rabbit, Red Rabbit - Nassim Soleimanpour"],
     ["Ireland", "Waiting for Godot - Samuel Beckett"],
+    ["Japan", "Garden of Words - Makoto Shinkai"],
     ["Malta", "Blanket Ban - Marta Vella & Davinia Hamilton"],
     ["Norway", "Hedda Gabler - Henrik Ibsen"],
+    ["Poland", "Nineteen Gardens - Magdalena Miecznicka"],
     ["Romania", "Macbett - Eugene Ionesco"],
     ["South Korea", "The Apology - Kyo Choi"],
     ["Switzerland", "The Physicists - Friedrich Durrenmatt"],
     ["United Kingdom", "Pygmalion - George Bernard Shaw"],
-    ["United States", "The Nether - Jenifer Haley"],
+    ["United States", "The Nether - Jenifer Haley"]
   ];
 
   const posts = edges
@@ -82,8 +84,8 @@ export default function TheatrePage({
             <div>{post.date}</div>
           </Listing>
         ))}
-        <Link to="/2023-watching-theatre/">
-          <h3>Shows I'm watching out for in 2023</h3>
+        <Link to="/2024-watching-theatre/">
+          <h3>Shows I'm watching out for in 2024</h3>
         </Link>
         <div>
           <h2>Plays Around the World</h2>

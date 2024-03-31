@@ -20,17 +20,22 @@ export default function Header({
   currentSubPage = "",
 }: HeaderProps) {
   const [submenuOpen, setSubmenuOpen] = useState<string | undefined>(
-    currentPage === "Music" || currentPage === "Interests"
+    currentPage === "Interests"
       ? currentPage
       : undefined
   );
   const title = currentPage ?? siteTitle ?? "Home";
+
+  let pageTitle = currentPage === "Home"
+  ? "Maria Mateescu \u2022 Software Engineer"
+  : currentPage + " \u2022 " + currentSubPage;
+  if (currentSubPage == "") {
+    pageTitle = "Maria \u2022 " + currentPage;
+  }
   return (
     <div className="d-flex flex-column">
       <div className="banner">
-        {currentPage === "Home"
-          ? "Maria Mateescu \u2022 Software Engineer"
-          : currentPage + " \u2022 " + currentSubPage}
+        {pageTitle}
       </div>
       <div className="d-flex flex-wrap flex-row justify-content-end">
         <TopMenuButton
@@ -41,19 +46,10 @@ export default function Header({
         </TopMenuButton>
         <div>
           <TopMenuButton
-            aria-label={
-              submenuOpen == "Music"
-                ? "Close submenu for Music"
-                : "Expand submenu for Music"
-            }
-            aria-expanded={submenuOpen == "Music"}
-            onClick={() =>
-              submenuOpen == "Music"
-                ? setSubmenuOpen(undefined)
-                : setSubmenuOpen("Music")
-            }
+            aria-label={"Navigate to Projects"}
+            onClick={() => navigate("/projects/")}
           >
-            Music
+            Projects
           </TopMenuButton>
         </div>
         <div>
@@ -90,25 +86,6 @@ function SubMenu({
   siteTitle = "",
   currentSubPage = "",
 }: HeaderProps) {
-  if (currentPage === "Music") {
-    return (
-      <div className="d-flex flex-wrap flex-row justify-content-end">
-        <Button
-          onClick={() => navigate("/scales/")}
-          aria-label={"Navigate to Music app on scales"}
-        >
-          Scales
-        </Button>
-        <Button
-          onClick={() => navigate("/chords/")}
-          aria-label={"Navigate to Music app on chords"}
-        >
-          Chords
-        </Button>
-      </div>
-    );
-  }
-
   if (currentPage === "Interests") {
     return (
       <div className="d-flex flex-wrap flex-row justify-content-end">

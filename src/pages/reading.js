@@ -25,6 +25,7 @@ export default function ReadingPage() {
 
   const books = [
     ["Country", "Title -  Author"],
+    ["Argentina", "Ficciones - Jorge Luis Borges"],
     ["Australia", "The Forests of Silence - Emily Rodda"],
     ["Belgium", "Maigret - Georges Simenon"],
     ["Brazil", "The Alchemist - Paulo Coelho"],

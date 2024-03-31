@@ -120,11 +120,11 @@ body {
   background: #121212;
   font: 400 22px/1.5 "Barlow Condensed", "Arial Narrow", "Avenir Next Condensed",
     sans-serif;
-  color: #38f;
+  color: #fff;
 }
 a {
   text-decoration: underline;
-  color: #aaf;
+  color: #38f;
 }
 .wrap {
   display: flex;
@@ -162,7 +162,7 @@ a {
 }
 .left-frame-top {
   height: 150px;
-  background: #38f;
+  background: #000;
   border-radius: 0 0 0 60px;
 }
 .left-frame-top a,

@@ -18,6 +18,16 @@ const Theatre2023 = () => (
         "London",
         "West End",
         "Recommendations",
+        "What to watch",
+        "shows in london",
+        "shows",
+        "selection",
+        "ratings",
+        "tracking",
+        "2023",
+        "this year",
+        "curated list",
+        "curated shows",
       ]}
     />
     <Layout currentPage="Interests" currentSubPage="Theatre">
@@ -82,16 +92,37 @@ const Theatre2023 = () => (
         <a href="https://openairtheatre.com/production/austentatious-2023">
           Austentatious
         </a>{" "}
-        - July 16
+        - July 16 - ★★★
         <br />
         <a href="https://openairtheatre.com/production-booking/97634">
           La Cage aux Folles
         </a>{" "}
-        - July 29 <br />
-        <a href="https://www.barbican.org.uk/whats-on/2023/event/royal-shakespeare-company-my-neighbour-totoro">
-          Totoro
+        - July 29 - ★★★★★
+        <br />
+        <a href="https://parktheatre.co.uk/whats-on/the-garden-of-words">
+          The Garden of Words
         </a>{" "}
-        - January 20, 2024
+        - Aug 12 - ★★★★
+        <br />
+        <a href="https://almeida.co.uk/whats-on/a-mirror/">A Mirror</a> - Sept 2
+        - <Link to="/theatre/a_mirror/">★★★★★</Link>
+        <br />
+        <a href="https://events.nationaltheatre.org.uk/events/86816">
+          The Effect
+        </a>{" "}
+        - Sept 13 - ★★★★
+        <br /> <a href="https://www.hampsteadtheatre.com/whats-on/2023/anthropology/">
+          Anthropology
+        </a>{" "}
+        - Sept 27 - ★★★★
+        <br /> <a href="https://www.hampsteadtheatre.com/whats-on/2023/nineteen-gardens/">
+          Nineteen Gardens
+        </a>{" "}
+        - Nov 23 - ★★★★
+        <br /> <a href="https://www.hampsteadtheatre.com/whats-on/2023/rock-n-roll/">
+          Rock'n'Roll
+        </a>{" "}
+        - Dec 9 - ★★★
       </p>
       <h2 id="to-book-">To book:</h2>
       <h3 id="six">SIX</h3>
@@ -106,81 +137,9 @@ const Theatre2023 = () => (
           Tickets{" "}
         </a>
       </p>
-      <h3 id="father-and-the-assassin">
-        The Father and the Assassin (Sept 8 - Oct 14)
-      </h3>
-      <p>
-        TBD / 20£-89£
-        <br />
-        Olivier Theatre
-        <br />
-        Indian Playwright, the story of the man who killed Ghandi
-        <br />
-        <a href="https://www.nationaltheatre.org.uk/productions/the-father-and-the-assassin/">
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
-      <h3>Garden of Words (Aug 10 - Sept 9)</h3>
-      <p>
-        1hr 45 / 15£-45£
-        <br />
-        Park Theatre
-        <br />
-        Stage adaptation of Hayao Miyazaki's anime.
-        <br />
-        <a href="https://parktheatre.co.uk/whats-on/the-garden-of-words">
-          Tickets
-        </a>
-      </p>
-      <h3>Rock'n'Roll (Dec 6 - Jan 27)</h3>
-      <p>
-        TBD / 10£-55£
-        <br />
-        Hampstead Theatre
-        <br />
-        A new play by Tom Stoppard. Communist Rock'n'roll?
-        <br />
-        <a href="https://www.hampsteadtheatre.com/whats-on/2023/rock-n-roll/">
-          Tickets
-        </a>
-      </p>
+      
       <h2 id="uncertain-">Uncertain:</h2>
-      <h3 id="motive-and-cue">The Motive and the Cue (- 15 July)</h3>
-      <p>
-        2h40m / 20£-89£
-        <br />
-        Lyttelton Theatre
-        <br />
-        New play on the making of Burton and Gielgud’s Hamlet
-        <br />
-        <a href="https://www.nationaltheatre.org.uk/productions/the-motive-and-the-cue/">
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
-      <h3 id="how-to-succeed-in-business-without-really-trying-may-12-jun-17-">
-        How to succeed in business without really trying (May 12 - Jun 17)
-      </h3>
-      <p>
-        130 min / 16£-35£
-        <br /> Gender bent version of the Tony/Pulitzer winning musical.
-        <br />
-        <a href="https://southwarkplayhouse.co.uk/productions/how-to-succeed-in-business-without-really-trying/#book-now">
-          Tickets
-        </a>
-      </p>
-      <h3 id="how-to-succeed-in-business-without-really-trying-may-12-jun-17-">
-        Anthropology (Sept 7 - Oct 14)
-      </h3>
-      <p>
-        TBD / 10£-55£
-        <br /> Someone builds a chatbot of their dead younger sister.
-        <br />
-        <a href="https://www.hampsteadtheatre.com/whats-on/2023/anthropology/">
-          Tickets
-        </a>
-      </p>
+
     </Layout>
   </>
 );

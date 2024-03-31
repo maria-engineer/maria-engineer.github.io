@@ -6,7 +6,6 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -49,6 +48,7 @@ export default function SEO({
   return (
     <>
       <Helmet>
+        <meta name={`description`} content={metaDescription} />
         <meta name={`twitter:title`} content={title} />
         <meta name={`twitter:description`} content={metaDescription} />
         <meta name={`twitter:card`} content={"summary"} />
@@ -58,9 +58,8 @@ export default function SEO({
         />
         <meta name={`og:title`} content={title} />
         <meta name={`og:description`} content={metaDescription} />
-        <meta name={`description`} content={metaDescription} />
         <meta name={"keywords"} content={keywords.join(",")} />
-        <meta name={"lang"} content={lang} />
+        <meta name={"lang"} content={lang ?? "en-GB"} />
         <title>{title}</title>
       </Helmet>
     </>
