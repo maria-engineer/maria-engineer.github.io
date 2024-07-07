@@ -11,6 +11,10 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.md`, `.mdx`, `.markdown`],
+        remarkPlugins: [
+          'remark-gfm',
+          'remark-footnotes',
+        ],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -62,6 +66,7 @@ module.exports = {
           allMdx(sort: {frontmatter: {date: DESC}}) {
             edges {
               node {
+                body
                 frontmatter {
                 slug
                 category

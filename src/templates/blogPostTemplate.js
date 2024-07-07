@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { MDXProvider } from "@mdx-js/react";
 
 import styled from "@emotion/styled";
 
@@ -15,7 +16,7 @@ export default function Template({
   children, // this prop will be injected by the GraphQL query below.
 }) {
   const { mdx } = data; // data.markdownRemark holds your post data
-  const { frontmatter } = mdx;
+  const {frontmatter } = mdx;
   if (frontmatter.category === "food") {
     return (
       <Layout currentPage="Interests" currentSubPage={"Food"}>
@@ -66,7 +67,7 @@ export default function Template({
       />
       <div className="content">
         <h1>{frontmatter.title}</h1>
-        {children}
+        <MDXProvider>{children}</MDXProvider>
       </div>
       <footer className="footer go-center">
         <div>---{frontmatter.date}---</div>

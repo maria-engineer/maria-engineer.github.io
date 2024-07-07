@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import MapChart from "../components/map";
 import { useState, useEffect } from "react";
 import GoogleContext from "../components/GoogleContext";
+import Footnote from "../components/footnote";
 
 export default function ReadingPage() {
   const [google, setGoogle] = useState(null);
@@ -31,6 +32,7 @@ export default function ReadingPage() {
     ["Brazil", "The Alchemist - Paulo Coelho"],
     ["Canada", "The Penelopiad - Margaret Atwood"],
     ["China", "The Art of War - Sun Tzu"],
+    ["Ivory Coast", "Standing heavy - GauZ'"],
     ["Czech Republic", "R.U.R. - Karel Capek"],
     ["France", "The Little Prince - Antoine de Saint-Exupery"],
     ["Germany", "Siddhartha - Herman Hesse"],

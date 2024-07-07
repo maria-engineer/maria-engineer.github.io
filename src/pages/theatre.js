@@ -32,6 +32,8 @@ export default function TheatrePage({
   const plays = [
     ["Country", "Title - Author"],
     ["Argentina", "Kiss of the Spider Woman(play) - Manuel Puig"],
+    ["Belgium", "Opening Night - Ivo van Hove"],
+    ["Brazil", "Feeling Afraid As If Something Terrible Is Going To Happen - Marcelo Dos Santos"],
     ["Czech Republic", "R.U.R. - Karel Capek"],
     ["France", "A Flea in her Ear - Georges Feydeau"],
     ["Germany", "Spring's Awakening - Frank Wedekind"],
