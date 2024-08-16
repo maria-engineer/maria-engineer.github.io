@@ -11,8 +11,14 @@ export default function IndexPage(): JSX.Element {
     <>
       <SEO title="Home" />
       <Layout currentPage="Home" currentSubPage="Home">
-        <ProfileImage />
         <h2>About Me</h2>
+        <p>
+          Currently enrolled in a life and executive coaching with{" "}
+          <a href="https://barefootcoaching.co.uk" target="_blank">
+            Barefoot Academy
+          </a>
+          . Stay tuned for exciting updates.
+        </p>
         <p>
           I am a Software Engineer with a focus on Developer and Operational
           Experience. I have discovered a passion for finding solutions that

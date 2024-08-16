@@ -60,51 +60,65 @@ const Theatre2024 = () => (
         </a>{" "}
         - March 27, 2024 - ★★★
         <br />
-        <a
-          href="https://openingnightmusical.com/"
-          target="_blank"
-        >
+        <a href="https://openingnightmusical.com/" target="_blank">
           Opening Night
         </a>{" "}
         - May 6, 2024 - ★★★★
         <br />
-         <a
-          href="https://sncokorea.com/boardPost/118037/7"
-          target="_blank"
-        >
+        <a href="https://sncokorea.com/boardPost/118037/7" target="_blank">
           Dear Evan Hansen (Seoul)
         </a>{" "}
         - Jun 5, 2024 - ★★★★★
-        <br /> <a
-          href="https://kathyandstella.com"
-          target="_blank"
-        >
+        <br />{" "}
+        <a href="https://kathyandstella.com" target="_blank">
           Kathy and Stella Solve a Murder
         </a>{" "}
         - Jun 18, 2024 - ★★★★
-        <br /> <a
-          href="https://www.punchdrunk.com/work/violas-room/"
-          target="_blank"
-        >
+        <br />{" "}
+        <a href="https://uk.hadestown.com" target="_blank">
+          Hadestown
+        </a>{" "}
+        - Jul 11, 2024 - ★★★★.5
+        <br />{" "}
+        <a href="https://www.punchdrunk.com/work/violas-room/" target="_blank">
           Viola's Room
         </a>{" "}
-        - Jul 2024
-        <br /> <a
-          href="https://hellodollyldn.com"
-          target="_blank"
-        >
+        - Jul 14, 2024 - ★★★★.5
+        <br />{" "}
+        <a href="https://hellodollyldn.com" target="_blank">
           Hello, Dolly!
         </a>{" "}
-        - Jul  2024 
-        <br /><a
-          href="https://macbethwestend.co.uk"
+        - Jul 16, 2024 - ★★★
+        <br />{" "}
+        <a
+          href="https://charingcrosstheatre.co.uk/theatre/marie-curie"
           target="_blank"
         >
+          Marie Curie
+        </a>{" "}
+        - Jul 18, 2024 - ★★★.5
+        <br />{" "}
+        <a
+          href="https://www.haroldpintertheatre.co.uk/shows/your-lie-in-april"
+          target="_blank"
+        >
+          Your Lie in April
+        </a>{" "}
+        - Aug 4, 2024 - ★★★★
+        <br />{" "}
+        <a
+          href="https://camdenfringe.com/events/things-between-heaven-and-earth/"
+          target="_blank"
+        >
+          Things Between Heaven and Earth
+        </a>{" "}
+        - Aug 5, 2024 - <Link to="/theatre/heaven_and_earth/">★★★★★</Link>
+        <br />
+        <a href="https://macbethwestend.co.uk" target="_blank">
           Macbeth
         </a>{" "}
-        - Oct  2024 
+        - Oct 2024
         <br />
-
       </p>
       <h2 id="to-book-">To book:</h2>
       <h3 id="six">SIX</h3>
@@ -120,44 +134,12 @@ const Theatre2024 = () => (
         </a>
       </p>
 
-      <h3 id="Hadestown">Hadestown (February 10 - ? )</h3>
-      <p>
-        2hr 30m / 20-120£
-        <br /> Lyric Theatre
-        <br /> This was a sellout back when it started at the National theatre,
-        and it sure made the waves on Broadway. The show has finally returned to
-        the West End.
-        <br />
-        <a
-          href="https://ticketing.nimaxtheatres.com/tickets/series/LYHDT01M?promo=HDTWEB&qitq=fc558381-26e5-48b1-aa9e-1e3a2f5a1e98&qitp=5ac9c109-949b-4cbf-89e4-1390109ad763&qitts=1702237994&qitc=nimaxtheatres&qite=lyrhad01mhdtweb&qitrt=Safetynet&qith=19027dde1931f58db03a9b6a70ce81d4"
-          target="_blank"
-        >
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
-
-      <h3 id="Viola">Viola's room ( - September 17 )</h3>
-      <p>
-        1hr / 32-51£
-        <br /> One Cartridge Place in Woolwich
-        <br /> Punchdrunk are back at it!!!!! That's all I need to know.
-        <br />
-        <a
-          href="https://www.todaytix.com/london/shows/41408"
-          target="_blank"
-        >
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
-
       <h2 id="uncertain-">Uncertain:</h2>
       <h3 id="Kiss Me Kate">Kiss Me Kate ( - September 14 )</h3>
       <p>
         2hr 40m / 30-120£ / TodayTix Rush
         <br /> Barbican Theatre
-        <br /> A Cole Porter classic. 
+        <br /> A Cole Porter classic.
         <br />
         <a
           href="https://www.barbican.org.uk/whats-on/2024/event/kiss-me-kate"
@@ -172,12 +154,11 @@ const Theatre2024 = () => (
       <p>
         2hr 15m / 33-115£ / TodayTix Rush
         <br /> Royal Drury Lane Theatre
-        <br /> I don't usually go for musicals adapted after a movie. But in this particular adaptation Kristoff gets some amazing new songs... And with Samantha Barks at the helm as Elsa... it is truly tempting
+        <br /> I don't usually go for musicals adapted after a movie. But in
+        this particular adaptation Kristoff gets some amazing new songs... And
+        with Samantha Barks at the helm as Elsa... it is truly tempting
         <br />
-        <a
-          href="https://frozenthemusical.co.uk"
-          target="_blank"
-        >
+        <a href="https://frozenthemusical.co.uk" target="_blank">
           {" "}
           Tickets{" "}
         </a>

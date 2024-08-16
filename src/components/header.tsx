@@ -44,15 +44,12 @@ export default function Header({
         >
           Home
         </TopMenuButton>
-        <div>
-          <TopMenuButton
-            aria-label={"Navigate to Projects"}
-            onClick={() => navigate("/projects/")}
-          >
-            Projects
-          </TopMenuButton>
-        </div>
-        <div>
+        <TopMenuButton
+          onClick={() => navigate("/blog/")}
+          aria-label={"Navigate to Blog"}
+        >
+          Blog
+        </TopMenuButton><div>
           <TopMenuButton
             aria-expanded={submenuOpen == "Interests"}
             aria-label={
@@ -69,12 +66,15 @@ export default function Header({
             Interests
           </TopMenuButton>
         </div>
-        <TopMenuButton
-          onClick={() => navigate("/blog/")}
-          aria-label={"Navigate to Blog"}
-        >
-          Blog
-        </TopMenuButton>
+        <div>
+          <TopMenuButton
+            aria-label={"Navigate to Projects"}
+            onClick={() => navigate("/projects/")}
+          >
+            Projects
+          </TopMenuButton>
+        </div>
+        
       </div>
       {submenuOpen && <SubMenu currentPage={submenuOpen} />}
     </div>
