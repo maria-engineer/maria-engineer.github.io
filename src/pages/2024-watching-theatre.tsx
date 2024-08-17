@@ -69,27 +69,27 @@ const Theatre2024 = () => (
           Dear Evan Hansen (Seoul)
         </a>{" "}
         - Jun 5, 2024 - ★★★★★
-        <br />{" "}
+        <br />
         <a href="https://kathyandstella.com" target="_blank">
           Kathy and Stella Solve a Murder
         </a>{" "}
         - Jun 18, 2024 - ★★★★
-        <br />{" "}
+        <br />
         <a href="https://uk.hadestown.com" target="_blank">
           Hadestown
         </a>{" "}
         - Jul 11, 2024 - ★★★★.5
-        <br />{" "}
+        <br />
         <a href="https://www.punchdrunk.com/work/violas-room/" target="_blank">
           Viola's Room
         </a>{" "}
         - Jul 14, 2024 - ★★★★.5
-        <br />{" "}
+        <br />
         <a href="https://hellodollyldn.com" target="_blank">
           Hello, Dolly!
         </a>{" "}
         - Jul 16, 2024 - ★★★
-        <br />{" "}
+        <br />
         <a
           href="https://charingcrosstheatre.co.uk/theatre/marie-curie"
           target="_blank"
@@ -97,7 +97,7 @@ const Theatre2024 = () => (
           Marie Curie
         </a>{" "}
         - Jul 18, 2024 - ★★★.5
-        <br />{" "}
+        <br />
         <a
           href="https://www.haroldpintertheatre.co.uk/shows/your-lie-in-april"
           target="_blank"
@@ -105,7 +105,7 @@ const Theatre2024 = () => (
           Your Lie in April
         </a>{" "}
         - Aug 4, 2024 - ★★★★
-        <br />{" "}
+        <br />
         <a
           href="https://camdenfringe.com/events/things-between-heaven-and-earth/"
           target="_blank"
@@ -113,6 +113,14 @@ const Theatre2024 = () => (
           Things Between Heaven and Earth
         </a>{" "}
         - Aug 5, 2024 - <Link to="/theatre/heaven_and_earth/">★★★★★</Link>
+        <br />
+        <a
+          href="https://www.barbican.org.uk/whats-on/2024/event/kiss-me-kate"
+          target="_blank"
+        >
+          Kiss Me Kate
+        </a>{" "}
+        - Aug 17, 2024 - ★★★★★
         <br />
         <a href="https://macbethwestend.co.uk" target="_blank">
           Macbeth
@@ -135,20 +143,6 @@ const Theatre2024 = () => (
       </p>
 
       <h2 id="uncertain-">Uncertain:</h2>
-      <h3 id="Kiss Me Kate">Kiss Me Kate ( - September 14 )</h3>
-      <p>
-        2hr 40m / 30-120£ / TodayTix Rush
-        <br /> Barbican Theatre
-        <br /> A Cole Porter classic.
-        <br />
-        <a
-          href="https://www.barbican.org.uk/whats-on/2024/event/kiss-me-kate"
-          target="_blank"
-        >
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
 
       <h3 id="Frozen">Frozen ( - September 8)</h3>
       <p>
