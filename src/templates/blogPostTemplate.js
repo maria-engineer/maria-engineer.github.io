@@ -8,7 +8,22 @@ import { MDXProvider } from "@mdx-js/react";
 import styled from "@emotion/styled";
 
 const Title = styled.h1`
+  font-size: 3rem;
+  @media (max-width: 420px) {
+    min-font-size: 24px;
+  }
   text-align: right important!;
+`;
+
+const Post = styled.div`
+  padding: 10px 60px 10px 60px;
+  @media (max-width: 420px) {
+    padding: 10px 10px 10px 10px;
+  }
+  font-family: source-serif-pro, Georgia, Cambria, "Helvetica Neue",
+    "Arial Narrow", serif;
+  text-rendering: optimizelegibility;
+  font-weight: 400;
 `;
 
 export default function Template({
@@ -16,7 +31,7 @@ export default function Template({
   children, // this prop will be injected by the GraphQL query below.
 }) {
   const { mdx } = data; // data.markdownRemark holds your post data
-  const {frontmatter } = mdx;
+  const { frontmatter } = mdx;
   if (frontmatter.category === "food") {
     return (
       <Layout currentPage="Interests" currentSubPage={"Food"}>
@@ -25,10 +40,10 @@ export default function Template({
           keywords={frontmatter.keywords}
           description={frontmatter.description}
         />
-        <div className=" content">
+        <Post>
           <Title>{frontmatter.title}</Title>
-          {children}
-        </div>
+          <MDXProvider>{children}</MDXProvider>
+        </Post>
       </Layout>
     );
   }
@@ -37,14 +52,14 @@ export default function Template({
     return (
       <Layout currentPage="Interests" currentSubPage={"Theatre Reviews"}>
         <SEO
-          title={frontmatter.title + " - Theatre Review"}
+          title={frontmatter.title + " - Review"}
           keywords={frontmatter.keywords}
           description={frontmatter.description}
         />
-        <div className="content">
-          <h1>{frontmatter.title}</h1>
-          {children}
-        </div>
+        <Post>
+          <Title>{frontmatter.title}</Title>
+          <MDXProvider>{children}</MDXProvider>
+        </Post>
         <footer className="footer go-center">
           <div>---{frontmatter.date}---</div>
           <div className="lcars-bar-slice-bottom"></div>
@@ -65,10 +80,10 @@ export default function Template({
         keywords={frontmatter.keywords}
         description={frontmatter.description}
       />
-      <div className="content">
-        <h1>{frontmatter.title}</h1>
+      <Post>
+        <Title>{frontmatter.title}</Title>
         <MDXProvider>{children}</MDXProvider>
-      </div>
+      </Post>
       <footer className="footer go-center">
         <div>---{frontmatter.date}---</div>
         <div className="lcars-bar-slice-bottom"></div>

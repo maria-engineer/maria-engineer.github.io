@@ -18,6 +18,26 @@ export const Button = styled.button`
   color: #121212;
 `;
 
+export const LinkButton = styled.a`
+  display: block;
+  margin: 10px 10px 0px 0px;
+  height: 57px;
+  padding: 10px 30px 10px 30px;
+  background: #38f;
+  border-radius: 26px;
+  border-width: 0;
+  text-align: center;
+  content-align: center;
+  line-height: normal;
+  text-decoration: none important!;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #121212;
+  align-self: center;
+  text-decoration: none;
+`;
+
 export const Control = styled.button`
   display: block;
   margin: 10px 10px 0px 0px;

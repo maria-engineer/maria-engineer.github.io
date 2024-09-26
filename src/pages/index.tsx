@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ProfileImage from "../images/image";
 import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { LinkButton } from "../components/commonStyles";
 
 export default function IndexPage(): JSX.Element {
   return (
@@ -13,14 +13,38 @@ export default function IndexPage(): JSX.Element {
       <Layout currentPage="Home" currentSubPage="Home">
         <h2>About Me</h2>
         <p>
-          Currently enrolled in a life and executive coaching with{" "}
+          Currently, I'm training for my ICF (International Coaching Federation)
+          certification with{" "}
           <a href="https://barefootcoaching.co.uk" target="_blank">
             Barefoot Academy
           </a>
-          . Stay tuned for exciting updates.
+          , specializing in personal and executive coaching. My goal is to
+          create a safe, empowering space where clients feel supported and
+          confident in navigating life's complexities. I believe that, just like
+          in coding, the key to meaningful progress isn't fixing what's broken
+          but continuously refining, optimizing, and evolving.
+        </p>
+
+        <p>
+          I hold a degree in Computer Science from Oxford University and have
+          worked across diverse engineering roles, from startups to industry
+          giants. My technical background has given me a unique perspective on
+          problem-solving, systems thinking, and efficiency - all of which I now
+          bring to my coaching practice.
         </p>
         <p>
-          I am a Software Engineer with a focus on Developer and Operational
+          <LinkButton
+            role="link"
+            href="https://www.the-andria.com/teachers/view/maria_engineer"
+            target="_blank"
+            aria-label="Go to an external site where you can book my coaching sessions"
+            tabindex="0"
+          >
+            Book me
+          </LinkButton>
+        </p>
+        <p>
+          As a Software Engineer I focus on Developer and Operational
           Experience. I have discovered a passion for finding solutions that
           will lead to better developer experience and increased efficiency,
           both on a day to day basis, as well as part of operations. I've
@@ -36,7 +60,7 @@ export default function IndexPage(): JSX.Element {
         </p>
         <h2>Past Engagements</h2>
         <p>
-          Reddit,
+          Reddit,{" "}
           <a href="https://cord.com" target="_blank">
             Cord
           </a>

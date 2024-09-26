@@ -122,6 +122,27 @@ const Theatre2024 = () => (
         </a>{" "}
         - Aug 17, 2024 - ★★★★★
         <br />
+        <a
+          href="https://frozenthemusical.co.uk"
+          target="_blank"
+        >
+          Frozen
+        </a>{" "}
+        - Sept 1, 2024 - ★★★★★
+        <br />
+        <a
+          href="https://www.choirofmanwestend.com"
+          target="_blank"
+        >
+          Choir of Man
+        </a>{" "}
+        - Sept 13, 2024 - ★★★★
+        <br />
+        <a href="https://charingcrosstheatre.co.uk/theatre/one-small-step" target="_blank">
+          One Small Step
+        </a>{" "}
+        - Oct 2024
+        <br />
         <a href="https://macbethwestend.co.uk" target="_blank">
           Macbeth
         </a>{" "}
@@ -143,20 +164,6 @@ const Theatre2024 = () => (
       </p>
 
       <h2 id="uncertain-">Uncertain:</h2>
-
-      <h3 id="Frozen">Frozen ( - September 8)</h3>
-      <p>
-        2hr 15m / 33-115£ / TodayTix Rush
-        <br /> Royal Drury Lane Theatre
-        <br /> I don't usually go for musicals adapted after a movie. But in
-        this particular adaptation Kristoff gets some amazing new songs... And
-        with Samantha Barks at the helm as Elsa... it is truly tempting
-        <br />
-        <a href="https://frozenthemusical.co.uk" target="_blank">
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
 
       <h2 id="Past years">Past Years</h2>
       <h3 id="years">
