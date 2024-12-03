@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
-    title: `Maria.Engineer: personal website`,
-    description: `Personal Website for Maria Mateescu - Software Engineer. This includes my blog, on engineering matters, and other projects I've written, including a scale and chord generator.`,
+    title: `Maria.Engineer - Tech Coach`,
+    description: `Personal Website for Maria Mateescu - Software Engineer turned Personal and Professional Coach.`,
     author: `@maria-engineer`,
     siteUrl: "https://maria.engineer",
   },
@@ -13,7 +13,6 @@ module.exports = {
         extensions: [`.md`, `.mdx`, `.markdown`],
         remarkPlugins: [
           'remark-gfm',
-          'remark-footnotes',
         ],
         gatsbyRemarkPlugins: [
           {

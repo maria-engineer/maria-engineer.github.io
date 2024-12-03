@@ -151,7 +151,7 @@ export const pageQuery = graphql`
 
 function chunkyfy(arr, chunkSize) {
   const oneChunk = new Array();
-  while (arr.length > 0) {
+  while (Array.isArray(arr) && arr.length > 0) {
     oneChunk.push(arr.slice(0, chunkSize));
     arr = arr.slice(chunkSize);
   }

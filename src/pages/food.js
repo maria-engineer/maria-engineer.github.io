@@ -110,6 +110,7 @@ export default function FoodPage({
     ["Turkey", "Baklava"],
     ["United Kingdom", "YES"],
     ["United States", "Grits"],
+    ["Uzbekistan", "YES"],
     ["Vietnam", "Pho"],
   ];
 

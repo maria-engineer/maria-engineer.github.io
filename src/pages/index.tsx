@@ -5,6 +5,19 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { LinkButton } from "../components/commonStyles";
+import { BarefootImage, ICFImage } from "../images/image";
+import styled from "@emotion/styled";
+
+const Credentials = styled.p`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  content-align: center;
+  line-height: normal;
+  align-self: center;
+`;
 
 export default function IndexPage(): JSX.Element {
   return (
@@ -13,16 +26,12 @@ export default function IndexPage(): JSX.Element {
       <Layout currentPage="Home" currentSubPage="Home">
         <h2>About Me</h2>
         <p>
-          Currently, I'm training for my ICF (International Coaching Federation)
-          certification with{" "}
-          <a href="https://barefootcoaching.co.uk" target="_blank">
-            Barefoot Academy
-          </a>
-          , specializing in personal and executive coaching. My goal is to
-          create a safe, empowering space where clients feel supported and
-          confident in navigating life's complexities. I believe that, just like
-          in coding, the key to meaningful progress isn't fixing what's broken
-          but continuously refining, optimizing, and evolving.
+          I am a trained coach, specializing in personal and executive coaching.
+          My goal is to create a safe, empowering space where clients feel
+          supported and confident in navigating life's complexities. I believe
+          that, just like in coding, the key to meaningful progress isn't fixing
+          what's broken but continuously refining, optimizing, and evolving. I
+          work with my clients to enable that growth.
         </p>
 
         <p>
@@ -40,9 +49,20 @@ export default function IndexPage(): JSX.Element {
             aria-label="Go to an external site where you can book my coaching sessions"
             tabindex="0"
           >
-            Book me
+            Work with me
           </LinkButton>
         </p>
+        <Credentials>
+          <a href="https://barefootcoaching.co.uk" target="_blank">
+            <BarefootImage />
+          </a>
+          <a
+            href="https://www.credly.com/badges/eb2603e4-cadb-498c-87e5-a7770d14cdd4/public_url"
+            target="_blank"
+          >
+            <ICFImage />
+          </a>
+        </Credentials>
         <p>
           As a Software Engineer I focus on Developer and Operational
           Experience. I have discovered a passion for finding solutions that
@@ -55,7 +75,7 @@ export default function IndexPage(): JSX.Element {
         </p>
         <p>
           In my free time I enjoy a varied number of hobbies like: drawing,
-          cooking, crochet, reading, writing, playing TTRPG games, and watching
+          cooking, weightlifting, crochet, reading, writing, TTRPG games, and
           theatre.
         </p>
         <h2>Past Engagements</h2>

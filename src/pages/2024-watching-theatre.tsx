@@ -141,12 +141,22 @@ const Theatre2024 = () => (
         <a href="https://charingcrosstheatre.co.uk/theatre/one-small-step" target="_blank">
           One Small Step
         </a>{" "}
-        - Oct 2024
+        - Oct 2, 2024 - ★★★★
+        <br />
+        <a href="https://space.org.uk/event/the-waiting-room-livestream/" target="_blank">
+          The Waiting Room
+        </a>{" "}
+        - Oct 3, 2024 - ★★★★★
         <br />
         <a href="https://macbethwestend.co.uk" target="_blank">
           Macbeth
         </a>{" "}
-        - Oct 2024
+        - Oct 7, 2024
+        <br />
+        <a href="https://www.youngvic.org/whats-on/face-the-crowd" target="_blank">
+          A Face in the Crowd
+        </a>{" "}
+        - Oct 16, 2024 - ★★★★
         <br />
       </p>
       <h2 id="to-book-">To book:</h2>
