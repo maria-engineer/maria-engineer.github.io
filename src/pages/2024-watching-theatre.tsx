@@ -158,20 +158,18 @@ const Theatre2024 = () => (
         </a>{" "}
         - Oct 16, 2024 - ★★★★
         <br />
+        <a href="https://sixthemusical.com/london/" target="_blank">
+          SIX
+        </a>{" "}
+        - Dec 4, 2024 - ★★★★
+        <br />
+        <a href="https://bridgetheatre.co.uk/whats-on/guys-and-dolls/" target="_blank">
+          Guys & Dolls
+        </a>{" "}
+        - Dec 9, 2024 - ★★★★
+        <br />
       </p>
       <h2 id="to-book-">To book:</h2>
-      <h3 id="six">SIX</h3>
-      <p>
-        1h 20m / TodayTix Rush (25£)
-        <br /> Vaudeville Theatre
-        <br /> Had tickets for the first lock down. Need to see this at some
-        point.
-        <br />
-        <a href="https://tickets.sixthemusical.com/city/2957-london/1DYC8-six-the-musical-vaudeville-theatre/">
-          {" "}
-          Tickets{" "}
-        </a>
-      </p>
 
       <h2 id="uncertain-">Uncertain:</h2>
 
