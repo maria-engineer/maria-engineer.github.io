@@ -8,6 +8,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { WholePage } from "./commonStyles";
+import styled from "@emotion/styled";
 
 import Header from "./header";
 
@@ -16,6 +17,13 @@ interface LayoutProps {
   children: React.ReactNode;
   currentSubPage?: string;
 }
+
+const MainCss = styled.div`
+  background: #121212;
+  color: #fff;
+  
+`;
+
 
 export default function Layout({
   currentPage = "",
@@ -32,13 +40,12 @@ export default function Layout({
     }
   `);
   return (
-    <>
+    <MainCss data-bs-theme="dark">
       <Header
         currentPage={currentPage}
         siteTitle={data.site.siteMetadata?.title || `Title`}
         currentSubPage={currentSubPage}
       />
-      <div data-bs-theme="dark" id="gap">
         <WholePage>
           {children}
 
@@ -48,7 +55,6 @@ export default function Layout({
             <a href="https://www.gatsbyjs.com">Gatsby</a>
           </footer>
         </WholePage>
-      </div>
-    </>
+    </MainCss>
   );
 }

@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Button = styled.button`
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
   display: block;
   margin: 10px 10px 0px 0px;
   width: 130px;
@@ -56,9 +59,22 @@ export const Tag = styled.button`
 `;
 
 export const Listing = styled.button`
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+  @media (max-width: 450px) {
+    font-size: 10px;
+  }
   border-width: 0px 0px 1px 10px;
   margin: 10px 0px 0px 0px;
   width: 100%;
+  height: 35px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,6 +84,13 @@ export const Listing = styled.button`
 `;
 
 export const WholePage = styled.div`
+  min-height: 100%;
   padding: 10px 5% 5% 10px;
   align-content: center;
+`;
+
+export const ButtonList = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 `;

@@ -127,6 +127,8 @@ export default function BlogPage({
           {">"}
         </button>
       </Navigation>
+      <hr/>
+      <p><sup>0</sup> The humour, as always, is in the footnotes.</p>
     </Layout>
   );
 }

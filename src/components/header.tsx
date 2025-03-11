@@ -14,6 +14,27 @@ const TopMenuButton = styled(Button)`
   background-color: #8bf;
 `;
 
+const Menu = styled.div`
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+`;
+
+const Banner = styled.h1`
+  @media only screen and (max-width: 700px) {
+    height: 40px;
+    font-size: 24px;
+  }
+  height: 65px;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 55px;
+  font-weight: 350;
+  color: #38f;
+`;
+
 export default function Header({
   currentPage = "",
   siteTitle = "",
@@ -23,20 +44,20 @@ export default function Header({
     currentPage === "Interests" ? currentPage : undefined
   );
   const title = currentPage ?? siteTitle ?? "Home";
-  const x = (Math.floor(Math.random() * 2) == 0);
-  const main = x ? "Maria Mateescu \u2022 Software Engineer" : "Maria Mateescu \u2022 Personal Coach";
+  const x = Math.floor(Math.random() * 2) == 0;
+  const main = x
+    ? "Maria Mateescu \u2022 Software Engineer"
+    : "Maria Mateescu \u2022 Personal Coach";
 
   let pageTitle =
-    currentPage === "Home"
-      ? main
-      : currentPage + " \u2022 " + currentSubPage;
+    currentPage === "Home" ? main : currentPage + " \u2022 " + currentSubPage;
   if (currentSubPage == "") {
     pageTitle = "Maria \u2022 " + currentPage;
   }
   return (
     <div className="d-flex flex-column">
-      <div className="banner">{pageTitle}</div>
-      <div className="d-flex flex-wrap flex-row justify-content-end">
+      <Banner>{pageTitle}</Banner>
+      <Menu>
         <TopMenuButton
           onClick={() => navigate("/")}
           aria-label={"Navigate to Homepage"}
@@ -51,6 +72,13 @@ export default function Header({
         >
           Blog
         </TopMenuButton>
+        <TopMenuButton
+          aria-label={"Navigate to Coaching"}
+          onClick={() => navigate("/coaching/")}
+          tabindex="0"
+        >
+          Coaching
+        </TopMenuButton> 
         <div>
           <TopMenuButton
             aria-expanded={submenuOpen == "Interests"}
@@ -69,16 +97,7 @@ export default function Header({
             Interests
           </TopMenuButton>
         </div>
-        <div>
-          <TopMenuButton
-            aria-label={"Navigate to Projects"}
-            onClick={() => navigate("/projects/")}
-            tabindex="0"
-          >
-            Projects
-          </TopMenuButton>
-        </div>
-      </div>
+      </Menu>
       {submenuOpen && <SubMenu currentPage={submenuOpen} />}
     </div>
   );
@@ -91,7 +110,7 @@ function SubMenu({
 }: HeaderProps) {
   if (currentPage === "Interests") {
     return (
-      <div className="d-flex flex-wrap flex-row justify-content-end">
+      <Menu>
         <Button
           onClick={() => navigate("/theatre/")}
           aria-label={"Navigate to the page on Theatre."}
@@ -107,11 +126,11 @@ function SubMenu({
           Reading
         </Button>
         <Button
-          onClick={() => navigate("/art/")}
-          aria-label={"Navigate to the page on Art."}
+          onClick={() => navigate("/projects/")}
+          aria-label={"Navigate to the page on projects I did."}
           tabindex="1"
         >
-          Art
+          Projects
         </Button>
         <Button
           onClick={() => navigate("/food/")}
@@ -120,7 +139,7 @@ function SubMenu({
         >
           Food
         </Button>
-      </div>
+      </Menu>
     );
   }
 

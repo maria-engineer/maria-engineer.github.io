@@ -7,6 +7,7 @@ import { faGift } from "@fortawesome/fontawesome-free-solid";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import SEO from "../components/seo";
 
+
 const ArtPage = () => (
   <>
     <SEO title="Art" />

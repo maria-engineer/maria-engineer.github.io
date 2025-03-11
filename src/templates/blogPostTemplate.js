@@ -12,7 +12,11 @@ const Title = styled.h1`
   @media (max-width: 420px) {
     min-font-size: 24px;
   }
-  text-align: right important!;
+  font-family: "Poppins", "Arial Narrow", sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 400;
+  text-align: left;
+  color: #38f;
 `;
 
 const Post = styled.div`
@@ -20,10 +24,21 @@ const Post = styled.div`
   @media (max-width: 420px) {
     padding: 10px 10px 10px 10px;
   }
-  font-family: source-serif-pro, Georgia, Cambria, "Helvetica Neue",
-    "Arial Narrow", serif;
+  font-family: "Poppins", "Arial Narrow", sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 400;
+  font-weight: 200;
+  font-style: normal;
+`;
+
+const Bar = styled.div`
+  margin: 5px auto 20px auto;
+  height: 10px;
+  background: #38f;
+  border-right: 18px solid #8bf;
+  border-left: 18px solid #8bf;
+  border-radius: 9px;
+  padding: 0 5px;
+  width: 60%;
 `;
 
 export default function Template({
@@ -60,10 +75,10 @@ export default function Template({
           <Title>{frontmatter.title}</Title>
           <MDXProvider>{children}</MDXProvider>
         </Post>
-        <footer className="footer go-center">
+        <div className="footer go-center">
           <div>---{frontmatter.date}---</div>
-          <div className="lcars-bar-slice-bottom"></div>
-        </footer>
+          <Bar/>
+        </div>
       </Layout>
     );
   }
@@ -84,10 +99,10 @@ export default function Template({
         <Title>{frontmatter.title}</Title>
         <MDXProvider>{children}</MDXProvider>
       </Post>
-      <footer className="footer go-center">
+      <div className="footer go-center">
         <div>---{frontmatter.date}---</div>
-        <div className="lcars-bar-slice-bottom"></div>
-      </footer>
+        <Bar/>
+      </div>
     </Layout>
   );
 }

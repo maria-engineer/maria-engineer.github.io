@@ -26,25 +26,44 @@ export default function IndexPage(): JSX.Element {
       <Layout currentPage="Home" currentSubPage="Home">
         <h2>About Me</h2>
         <p>
-          I am a trained coach, specializing in personal and executive coaching.
-          My goal is to create a safe, empowering space where clients feel
-          supported and confident in navigating life's complexities. I believe
-          that, just like in coding, the key to meaningful progress isn't fixing
-          what's broken but continuously refining, optimizing, and evolving. I
-          work with my clients to enable that growth.
+          I'm a coach who believes growth happens when we challenge our
+          assumptions, lean into discomfort, and use our experiences—good or
+          bad—as fuel for change. My coaching is rooted in my own journey of
+          navigating big transitions and challenges, from career shifts to
+          moving between countries. I've learned firsthand that the path to
+          meaningful change isn't about following a preset formula—it's about
+          uncovering what's truly important to you, and then aligning your
+          actions with those values.{" "}
+        </p>
+        <p>
+          My approach isn't about giving you any answers. It's about helping you
+          find your own, whether you're facing a tough decision, feeling
+          overwhelmed by life's demands, or simply trying to figure out what's
+          next. I guide you through the process of clarity, uncovering the
+          underlying motivations and beliefs that shape your choices, so you can
+          make confident, informed decisions that reflect who you are and what
+          you want.
         </p>
 
         <p>
-          I hold a degree in Computer Science from Oxford University and have
-          worked across diverse engineering roles, from startups to industry
-          giants. My technical background has given me a unique perspective on
-          problem-solving, systems thinking, and efficiency - all of which I now
-          bring to my coaching practice.
+          I was steered toward Computer Science from an early age. My path felt
+          almost predetermined—study at Oxford, work in tech... but something
+          was missing. While I excelled in technical roles at companies like
+          Facebook, Amazon, I realized that the real challenges I faced were
+          human-centered—teams, decision-making, personal growth. That was a
+          hard realisation for me because I always thought it was all about the
+          maths. But I soon learned to love it. After experiencing several
+          career shifts and life transitions, including living in New York,
+          Cambridge, London, and now Seoul, I found coaching as a way to combine
+          my problem-solving mindset with my desire to help others navigate
+          change. Now, I guide professionals and leaders through the uncertainty
+          of growth, helping them align their decisions with their true values
+          and step into their next chapter with clarity and confidence.
         </p>
         <p>
           <LinkButton
             role="link"
-            href="https://www.the-andria.com/teachers/view/maria_engineer"
+            href="https://cal.com/maria-engineer/introduction-to-coaching"
             target="_blank"
             aria-label="Go to an external site where you can book my coaching sessions"
             tabindex="0"
@@ -64,27 +83,20 @@ export default function IndexPage(): JSX.Element {
           </a>
         </Credentials>
         <p>
-          As a Software Engineer I focus on Developer and Operational
-          Experience. I have discovered a passion for finding solutions that
-          will lead to better developer experience and increased efficiency,
-          both on a day to day basis, as well as part of operations. I've
-          greatly enjoyed exploring different solutions as I believe there isn't
-          one solution for everything, sometimes it's tools, sometimes it's
-          automation, sometimes is system design. Solving such problems is both
-          exciting and rewarding.
-        </p>
-        <p>
-          In my free time I enjoy a varied number of hobbies like: drawing,
-          cooking, weightlifting, crochet, reading, writing, TTRPG games, and
-          theatre.
+          When I'm not coaching, you'll find me exploring food, weightlifting,
+          hiking, reading, writing, and diving into tabletop role-playing
+          games or theater.
         </p>
         <h2>Past Engagements</h2>
         <p>
-          Reddit,{" "}
-          <a href="https://cord.com" target="_blank">
-            Cord
-          </a>
-          , Thoughtworks, Facebook, Amazon, Google
+          I've had the privilege of working with some incredible organizations,
+          including:
+        </p>
+        <p>Reddit, Cord(now defunct), Thoughtworks, Facebook, Amazon, Google</p>
+        <p>
+          Each of these experiences shaped who I am today, both as a
+          professional and as a coach, and has fueled my drive to help others
+          thrive in their careers and lives.
         </p>
 
         <h2>Contact</h2>
