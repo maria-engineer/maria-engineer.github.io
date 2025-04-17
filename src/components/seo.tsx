@@ -79,6 +79,7 @@ export default function SEO({
     "English speaking coach apac",
     "Life coach apac",
     "Business coach apac",
+    "career coach seoul", "career coach", "career coach apac", "career coach korea", "perfectionsim coaching", "coaching for perfectionists", "perfectionist coach" 
   ];
   defaultKeywords.push(...keywords);
 

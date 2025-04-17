@@ -45,6 +45,7 @@ export default function ReadingPage() {
     ["Poland", "Solaris - Stanislaw Lem"],
     ["Romania", "Iona - Marin Sorescu"],
     ["Russia", "Lolita - Vladimir Nabokov"],
+    ["South Africa", "Love Below Zero - Bianca Blake"],
     ["South Korea", "Kim Jiyoung, Born 1982 - Cho Nam-Joo"],
     ["Switzerland", "Heidi - Johanna Spyri"],
     ["Taiwan", "The Mermaid's Tale - Lee Wei-Jing"],

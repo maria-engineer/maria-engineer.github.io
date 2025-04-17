@@ -42,7 +42,9 @@ export default function ReinventionPage() {
       />
       <Layout currentPage="Coaching">
         <h1>Reinvent Yourself After a Major Life Change</h1>
-        <StoryDiv>Learn to respond to life's challenges with clarity and intention.</StoryDiv>
+        <StoryDiv>
+          Learn to respond to life's challenges with clarity and intention.
+        </StoryDiv>
         <h2>What is this program about?</h2>
         <StoryDiv>
           Life has a way of throwing unexpected challenges that turn everything
@@ -75,7 +77,9 @@ export default function ReinventionPage() {
           roles have unexpectedly changed. If you have recently been fired,
           gotten laid off, lost funding, going through a divorce, or other major
           life changes... this program will help you focus on building the life
-          you want using these changes and setbacks to fuel it.
+          you want using these changes and setbacks to fuel it. If you are
+          willing to take a deep dive into what you can currently do and what
+          makes you happy, this program is for you.
         </StoryDiv>
         <h2>The program</h2>
         <h3>Session 1: The Why?</h3>
@@ -170,7 +174,7 @@ export default function ReinventionPage() {
           The program is comprised of 6 sessions, each one hour long. The whole
           program will be priced at £500, to be transferred to my bank account
           upon your decision to continue. Further 1:1 sessions will be available
-          upon request for £90/hour. 
+          upon request for £90/hour.
         </StoryDiv>
       </Layout>
     </>

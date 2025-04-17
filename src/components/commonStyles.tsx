@@ -58,6 +58,17 @@ export const Tag = styled.button`
   border-width: 0;
 `;
 
+export const Credentials = styled.p`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  content-align: center;
+  line-height: normal;
+  align-self: center;
+`;
+
 export const Listing = styled.button`
   @media (max-width: 1000px) {
     font-size: 20px;

@@ -11,6 +11,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               slug
               category
+              prev
+              next
             }
             internal {
               contentFilePath

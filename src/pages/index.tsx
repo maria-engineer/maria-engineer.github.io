@@ -4,20 +4,10 @@ import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { LinkButton } from "../components/commonStyles";
+import { Credentials, LinkButton } from "../components/commonStyles";
 import { BarefootImage, ICFImage } from "../images/image";
-import styled from "@emotion/styled";
 
-const Credentials = styled.p`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  text-align: center;
-  content-align: center;
-  line-height: normal;
-  align-self: center;
-`;
+
 
 export default function IndexPage(): JSX.Element {
   return (

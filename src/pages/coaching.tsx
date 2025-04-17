@@ -4,7 +4,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
-import { LinkButton } from "../components/commonStyles";
+import { Credentials, LinkButton } from "../components/commonStyles";
+import { BarefootImage, ICFImage } from "../images/image";
 
 const Carousel = styled.div`
   align-self: center;
@@ -148,6 +149,18 @@ export default function CoachingPage() {
             Work with me
           </LinkButton>
         </p>
+        <Credentials>
+          <a href="https://barefootcoaching.co.uk" target="_blank">
+            <BarefootImage />
+          </a>
+          <a
+            href="https://www.credly.com/badges/eb2603e4-cadb-498c-87e5-a7770d14cdd4/public_url"
+            target="_blank"
+          >
+            <ICFImage />
+          </a>
+        </Credentials>
+
         <h2>Client Stories</h2>
         <StoryDiv>
           I have worked with a diverse range of clients, from those in academia

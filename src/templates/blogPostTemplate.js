@@ -118,6 +118,8 @@ export const pageQuery = graphql`
         category
         description
         keywords
+        prev
+        next
       }
     }
   }

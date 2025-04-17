@@ -4,6 +4,7 @@ import { graphql, navigate } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Listing } from "../components/commonStyles";
+// import Newsletter from "../components/newsletter";
 
 import styled from "@emotion/styled";
 
