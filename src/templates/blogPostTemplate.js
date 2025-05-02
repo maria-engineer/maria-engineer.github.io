@@ -19,6 +19,15 @@ const Title = styled.h1`
   color: #38f;
 `;
 
+const Navigation = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+`;
+
 const Post = styled.div`
   padding: 10px 60px 10px 60px;
   @media (max-width: 420px) {
@@ -77,7 +86,7 @@ export default function Template({
         </Post>
         <div className="footer go-center">
           <div>---{frontmatter.date}---</div>
-          <Bar/>
+          <Bar />
         </div>
       </Layout>
     );
@@ -99,9 +108,30 @@ export default function Template({
         <Title>{frontmatter.title}</Title>
         <MDXProvider>{children}</MDXProvider>
       </Post>
+      <Navigation>
+        {frontmatter.prev ? (
+          <a
+            aria-label="Previous post"
+            key="back"
+            disabled={!frontmatter.prev}
+            href={frontmatter.prev}
+          >
+            {"< Prev"}
+          </a>
+        ) : (
+          <div />
+        )}
+        {frontmatter.next ? (
+          <a aria-label="Next post." key="next" href={frontmatter.next}>
+            {"Next >"}
+          </a>
+        ) : (
+          <div />
+        )}
+      </Navigation>
       <div className="footer go-center">
         <div>---{frontmatter.date}---</div>
-        <Bar/>
+        <Bar />
       </div>
     </Layout>
   );
