@@ -48,6 +48,12 @@ const StoryContainer = styled.div`
   width: 80%;
 `;
 
+const ReviewContainer = styled.div`
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+`;
+
 const clientStories: Array<{ story: string; client: string; title: string }> = [
   {
     story:
@@ -68,6 +74,43 @@ const clientStories: Array<{ story: string; client: string; title: string }> = [
     title: "CSO",
   },
 ];
+
+const clientReviews: Array<{ review: string; client: string; stars: number }> = [
+  {
+    review:
+      "Coaching with Maria helped me to change some unhelpful long-held beliefs and see a different perspective. Maria is very good and holding a safe space and builds trust quickly which allowed me to focus on the things that really matter. She treads carefully, is considered and curious, and very wise. I would really recommend trying Maria as your coach.",
+    client: "Jason H",
+    stars: 5,
+  },
+  {
+    review:"I’ve worked with Maria for a couple of months now and find her sessions a source of calm, comfort and inspiration to move forward with clarity. She is a brilliant balance - challenging me when I need it, as well as creating a nurturing and safe environment. If you are exploring what your future looks like, want to build a fulfilling life and career, or simply want help unpicking a challenge at work, I highly recommend working with Maria.",
+    client: "Lizzie G",
+    stars: 5,
+  },
+  {
+    review:"Being coached by you was a transformative experience—Maria's calm, client-centered approach and ability to create reflective space helped me bring clarity to my thoughts, appreciate the power of silence, and focus on what truly matters.",
+    client: "SP",
+    stars: 4,
+  },
+  {
+    review:"Maria is an excellent coach. She helped me find solutions to team management, changing responsibilities and navigating uncertainty in start-up development. She is patient and listens well. She always asks the best questions for me to find the best answers forward.",
+    client: "Cristiana B",
+    stars: 5,
+  },
+  {
+    review:"She brings a rare combination of deep empathy, insightful questioning, and unwavering presence to every session. From the very beginning, I felt seen, heard, and supported—never judged.  Maria has a gift for creating a space where reflection leads to action. Her thoughtful approach helped me gain clarity on my goals, uncover limiting beliefs, and take meaningful steps forward with confidence. She challenged me when I needed it, encouraged me when I doubted myself, and consistently held space for my growth in a way that felt both powerful and personal.",
+    client: "Shrikes g",
+    stars: 5,
+  },
+  {
+    review:"Lorem",
+    client: "Jason H",
+    stars: 5,
+  },
+  
+];
+
+const reviews = 5;
 
 const stories = 1;
 
@@ -91,6 +134,27 @@ export default function CoachingPage() {
   const prev = () => {
     setAutoScroll(false);
     setCurrentIndex(currentIndex == 0 ? stories - 1 : currentIndex - 1);
+  };
+
+  const [currentIndexReview, setCurrentIndexReview] = useState<number>(0);
+  const [autoScrollReview, setAutoScrollReview] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (autoScrollReview) {
+      const interval = setInterval(() => {
+        setCurrentIndexReview((currentIndexReview + 1) % reviews);
+      }, 120000);
+    }
+  }, [autoScrollReview]);
+
+  const nextReview = () => {
+    setAutoScrollReview(false);
+    setCurrentIndexReview((currentIndexReview + 1) % reviews);
+  };
+
+  const prevReview = () => {
+    setAutoScrollReview(false);
+    setCurrentIndexReview(currentIndexReview == 0 ? reviews - 1 : currentIndexReview - 1);
   };
 
   return (
@@ -161,6 +225,20 @@ export default function CoachingPage() {
           </a>
         </Credentials>
 
+        <h2>Client Reviews</h2>
+        <StoryDiv>
+          Here's what my clients have to say about working with me:
+        </StoryDiv>
+        <Carousel>
+           <Chevron onClick={prevReview}>&lt;</Chevron> 
+          <ReviewContainer>
+            <StoryDiv>❝{clientReviews[currentIndexReview].review}❞</StoryDiv>
+            <ClientName>{clientReviews[currentIndexReview].client}</ClientName>
+            <ClientTitle>{clientReviews[currentIndexReview].stars == 5? "★★★★★": "★★★★"}</ClientTitle>
+          </ReviewContainer>
+           <Chevron onClick={nextReview}>&gt;</Chevron> 
+        </Carousel>
+
         <h2>Client Stories</h2>
         <StoryDiv>
           I have worked with a diverse range of clients, from those in academia
@@ -175,6 +253,8 @@ export default function CoachingPage() {
           </StoryContainer>
           {/* <Chevron onClick={next}>&gt;</Chevron> */}
         </Carousel>
+
+        
       </Layout>
     </>
   );

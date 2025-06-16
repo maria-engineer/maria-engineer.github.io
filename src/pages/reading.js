@@ -4,7 +4,6 @@ import SEO from "../components/seo";
 import MapChart from "../components/map";
 import { useState, useEffect } from "react";
 import GoogleContext from "../components/GoogleContext";
-import Footnote from "../components/footnote";
 
 export default function ReadingPage() {
   const [google, setGoogle] = useState(null);
@@ -47,6 +46,7 @@ export default function ReadingPage() {
     ["Russia", "Lolita - Vladimir Nabokov"],
     ["South Africa", "Love Below Zero - Bianca Blake"],
     ["South Korea", "Kim Jiyoung, Born 1982 - Cho Nam-Joo"],
+    ["Sweden", "Toward Eternity - Anton Hur"],
     ["Switzerland", "Heidi - Johanna Spyri"],
     ["Taiwan", "The Mermaid's Tale - Lee Wei-Jing"],
     ["Ukraine", "Death and The Penguin - Andrey Kurkov"],
