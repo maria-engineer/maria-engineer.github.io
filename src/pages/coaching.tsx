@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 import { Credentials, LinkButton } from "../components/commonStyles";
-import { BarefootImage, ICFImage } from "../images/image";
+import { BarefootImage, GottmanImage, ICFImage } from "../images/image";
 
 const Carousel = styled.div`
   align-self: center;
@@ -222,6 +222,12 @@ export default function CoachingPage() {
             target="_blank"
           >
             <ICFImage />
+          </a>
+          <a
+            href="https://learning.gottman.com/certificates/arzi8e8lml"
+            target="_blank"
+          >
+            <GottmanImage />
           </a>
         </Credentials>
 

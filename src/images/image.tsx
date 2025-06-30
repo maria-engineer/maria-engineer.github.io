@@ -32,3 +32,21 @@ export function ICFImage() {
     />
   );
 }
+
+export function GottmanImage() {
+  return (
+    <StaticImage
+      height={100}
+      src={"./gottman-level1.png"}
+    />
+  );
+}
+
+export function ProfileImage() {
+  return (
+    <StaticImage
+      border-radius={"500px"}
+      src={"./maria-mateescu-portrait.jpeg"}
+    />
+  );
+}

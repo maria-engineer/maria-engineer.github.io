@@ -21,6 +21,7 @@ next: "/blog/korean_future_tenses/"
 ---
 
 import Footnote from "../../components/footnote";
+import AuthorCard from "../../components/authorCard";
 
 My undergraduate thesis was "Learning Regular Expressions<Footnote presentation="0">Regular expressions are a representation of a pattern that in computer science we can use to see if one thing is part of the pattern or not. They can also be used to produce more results in the same pattern.</Footnote> from Positive Examples". For example, say we have the following examples `a, aa, aaa, aaaa` a human may deduce that the regular expression is `a+`, in English it means the letter `a` repeated multiple times. Task: How could we get computers to reach the same conclusion? Especially when even people may reach a different conclusion. One such alternative answer is: any letter repeated multiple times. The conclusion of my thesis was that it cannot be done. More specifically it can, but only if you introduce restrictions, because if you don't `.*`, which is the regular expression for "everything is permitted", will always work, and will always be the shortest and simplest answer. If we introduce restrictions on how the expression looks like, we can come up with something better, or at least closer to what a human would, but the restriction in itself is a negative example.
 
@@ -64,7 +65,7 @@ Take my learning from the coaching course. I always thought that active listenin
 
 Just as I concluded in my thesis that computers can't learn regular expressions from only positive examples, I realised that we, as humans, can't fully learn life skills without experiencing or observing mistakes. Mistakes happen, and treat them as a gift, because they do teach lessons no one else can. And it will only be mistakes that will prepare us to deal with the unexpected, and the unexpected always happens, otherwise we could just automate our lives away.
 
-_Interested in learning more? Feel free to explore my coaching [here](/coaching/) and book a free intro call to discuss how I can help you._
+<AuthorCard/>
 
 ---
 
