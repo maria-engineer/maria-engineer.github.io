@@ -199,7 +199,7 @@ export default function CoachingPage() {
           </Link>
           . If you would like to work together on something else, we can work
           together on a plan that is designed for you. Coaching is inherently a
-          personal experience. Just book a 30minute call with me here, and let's
+          personal experience. Just book a free 30 minute call with me here, and let's
           see how we can work together.
         </StoryDiv>
 
@@ -231,7 +231,7 @@ export default function CoachingPage() {
           </a>
         </Credentials>
 
-        <h2>Client Reviews</h2>
+        <h2 id="reviews">Client Reviews</h2>
         <StoryDiv>
           Here's what my clients have to say about working with me:
         </StoryDiv>

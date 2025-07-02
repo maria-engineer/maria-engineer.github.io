@@ -40,7 +40,7 @@ export default function ReinventionPage() {
           "coaching for overcoming fear",
         ]}
       />
-      <Layout currentPage="Coaching">
+      <Layout currentPage="Coaching" currentSubPage="Reinvention">
         <h1>Reinvent Yourself After a Major Life Change</h1>
         <StoryDiv>
           Learn to respond to life's challenges with clarity and intention.
@@ -155,7 +155,7 @@ export default function ReinventionPage() {
         <h2>The Logistics</h2>
         <h3>How we start</h3>
         <StoryDiv>
-          Let's book an introductory 30-minute call together to see if you think
+          Let's book a free introductory 30-minute call together to see if you think
           we're a good fit to work together. If you have any other questions,
           feel free to reach out at: hi@maria.engineer
         </StoryDiv>
@@ -172,9 +172,8 @@ export default function ReinventionPage() {
         <h3>Cost</h3>
         <StoryDiv>
           The program is comprised of 6 sessions, each one hour long. The whole
-          program will be priced at £500, to be transferred to my bank account
-          upon your decision to continue. Further 1:1 sessions will be available
-          upon request for £90/hour.
+          program is priced at £500 (paid upfront for all 6 sessions). Further
+          1:1 sessions will be priced at £90/hour.
         </StoryDiv>
       </Layout>
     </>

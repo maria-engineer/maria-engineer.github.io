@@ -41,7 +41,7 @@ export default function Header({
   currentSubPage = "",
 }: HeaderProps) {
   const [submenuOpen, setSubmenuOpen] = useState<string | undefined>(
-    currentPage === "Interests" ? currentPage : undefined
+    currentPage === "Interests" || currentPage === "Coaching" ? currentPage : undefined
   );
   const title = currentPage ?? siteTitle ?? "Home";
   const x = Math.floor(Math.random() * 2) == 0;
@@ -138,6 +138,27 @@ function SubMenu({
           tabindex="1"
         >
           Food
+        </Button>
+      </Menu>
+    );
+  }
+
+  if (currentPage === "Coaching") {
+    return (
+      <Menu>
+        <Button
+          onClick={() => navigate("/faq/")}
+          aria-label={"Navigate to the frequently asked questions page."}
+          tabindex="1"
+        >
+          FAQ
+        </Button>
+        <Button
+          onClick={() => navigate("/coaching-reinvention/")}
+          aria-label={"Navigate to the programs page."}
+          tabindex="1"
+        >
+          Programs
         </Button>
       </Menu>
     );
