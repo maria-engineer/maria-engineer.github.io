@@ -8,8 +8,11 @@ subcategory: "opinion"
 keywords: ["Opinion", "DevOps", "DevX", "Developer", "Developer Experience", "Productivity", "Efficiency", "Effectiveness", "Software"]
 description: "While the \"Real Programmer\" will always choose to use CLIs as they are the true sign of competence, good UIs with good defaults are actually the better choice when building tools of the average software engineer."
 prev: ""
-next: ""
+next: "/blog/work_life_balance_tips/"
 ---
+
+import AuthorCard from "../../components/authorCard";
+
 ### Or at least consider building a UI first
 The other day a recruiter asked me if I built CLIs (Command Line Tools) often. To which I honestly answered that no, I prefer to build UI based tools, as I have found them to work better for engineers. These should live in internal tooling webpages, where they can be protected on corporate networks requiring corporate VPNs to access. 
 
@@ -42,3 +45,5 @@ All while a UI could do all this more visibly, and likely in a lot less time... 
 
 ## Conclusion
 The only real reason I could see why CLIs would be more valuable in the event of an emergency, is that they do have fewer dependencies. However if you write your code in a modular fashion, so that you can just call the functions when when the webservers are down. Ultimately, well written UIs should not be slow, and in a time of emergency we need something simple and visual to make sure it catches us out on our mistakes. 
+
+<AuthorCard/>

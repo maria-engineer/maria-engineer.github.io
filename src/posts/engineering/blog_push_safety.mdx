@@ -7,11 +7,12 @@ category: "engineer"
 subcategory: "opinion"
 keywords: [ "Software Engineer", "push safety", "code review", "macroservice", "monoservice", "microservice", "engineering", "source control", "engineering productivity", "backwards compatibility", "forwards compatibility", "ci/cd", "continuous deployment", "continuous integration", "writing safe code", "better engineering", "code migration", "database migration", "system updates", "compatibility issues", "software deployment"]
 description: "Learn how to code with push safety in mind. This comprehensive guide covers backwards and forwards compatibility, common pitfalls in database changes and frontend updates, and best practices for seamless software deployments."
-prev: ""
-next: ""
+prev: "/blog/disambiguation/"
+next: "/blog/urgency/"
 ---
 
 import Footnote from '../../components/footnote';
+import AuthorCard from "../../components/authorCard";
 
 *Disclaimer: This is a post summarising a couple of different hour-long talks I have given in the past about push safety and engineering best practices. I have tried to be succinct, as well as abstract away any company specific details.*
 
@@ -112,6 +113,8 @@ It is hard. I have seen some extremely seasoned, incredibly knowledgeable engine
 ## Conclusion
 
 When there are changes there is always risk. Think of push safety as a series of best practices that help mitigate those risks. The only code that doesn't ever break is no code. So things may break sometimes, but if we follow some best practices, we will reduce how often that happens, and how quickly we can recover from it. 
+
+<AuthorCard/>
 
 ---
 <sup>1</sup> Unless you ask Microsoft. Microsoft products are legendary for how long they maintain backwards compatibility. But it comes at <a href="https://news.ycombinator.com/item?id=21451713" target="_blank">costs</a>.

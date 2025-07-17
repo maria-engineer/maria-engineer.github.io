@@ -5,7 +5,12 @@ import SEO from "../components/seo";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";
 import { Credentials, LinkButton } from "../components/commonStyles";
-import { BarefootImage, GottmanImage, ICFImage } from "../images/image";
+import {
+  BarefootImage,
+  Gottman1Image,
+  Gottman2Image,
+  ICFImage,
+} from "../images/image";
 
 const Carousel = styled.div`
   align-self: center;
@@ -75,7 +80,11 @@ const clientStories: Array<{ story: string; client: string; title: string }> = [
   },
 ];
 
-const clientReviews: Array<{ review: string; client: string; stars: number }> = [
+const clientReviews: Array<{
+  review: string;
+  client: string;
+  stars: number;
+}> = [
   {
     review:
       "Coaching with Maria helped me to change some unhelpful long-held beliefs and see a different perspective. Maria is very good and holding a safe space and builds trust quickly which allowed me to focus on the things that really matter. She treads carefully, is considered and curious, and very wise. I would really recommend trying Maria as your coach.",
@@ -83,31 +92,34 @@ const clientReviews: Array<{ review: string; client: string; stars: number }> = 
     stars: 5,
   },
   {
-    review:"I’ve worked with Maria for a couple of months now and find her sessions a source of calm, comfort and inspiration to move forward with clarity. She is a brilliant balance - challenging me when I need it, as well as creating a nurturing and safe environment. If you are exploring what your future looks like, want to build a fulfilling life and career, or simply want help unpicking a challenge at work, I highly recommend working with Maria.",
+    review:
+      "I’ve worked with Maria for a couple of months now and find her sessions a source of calm, comfort and inspiration to move forward with clarity. She is a brilliant balance - challenging me when I need it, as well as creating a nurturing and safe environment. If you are exploring what your future looks like, want to build a fulfilling life and career, or simply want help unpicking a challenge at work, I highly recommend working with Maria.",
     client: "Lizzie G",
     stars: 5,
   },
   {
-    review:"Being coached by you was a transformative experience—Maria's calm, client-centered approach and ability to create reflective space helped me bring clarity to my thoughts, appreciate the power of silence, and focus on what truly matters.",
+    review:
+      "Being coached by you was a transformative experience—Maria's calm, client-centered approach and ability to create reflective space helped me bring clarity to my thoughts, appreciate the power of silence, and focus on what truly matters.",
     client: "SP",
     stars: 4,
   },
   {
-    review:"Maria is an excellent coach. She helped me find solutions to team management, changing responsibilities and navigating uncertainty in start-up development. She is patient and listens well. She always asks the best questions for me to find the best answers forward.",
+    review:
+      "Maria is an excellent coach. She helped me find solutions to team management, changing responsibilities and navigating uncertainty in start-up development. She is patient and listens well. She always asks the best questions for me to find the best answers forward.",
     client: "Cristiana B",
     stars: 5,
   },
   {
-    review:"She brings a rare combination of deep empathy, insightful questioning, and unwavering presence to every session. From the very beginning, I felt seen, heard, and supported—never judged.  Maria has a gift for creating a space where reflection leads to action. Her thoughtful approach helped me gain clarity on my goals, uncover limiting beliefs, and take meaningful steps forward with confidence. She challenged me when I needed it, encouraged me when I doubted myself, and consistently held space for my growth in a way that felt both powerful and personal.",
+    review:
+      "She brings a rare combination of deep empathy, insightful questioning, and unwavering presence to every session. From the very beginning, I felt seen, heard, and supported—never judged.  Maria has a gift for creating a space where reflection leads to action. Her thoughtful approach helped me gain clarity on my goals, uncover limiting beliefs, and take meaningful steps forward with confidence. She challenged me when I needed it, encouraged me when I doubted myself, and consistently held space for my growth in a way that felt both powerful and personal.",
     client: "Shrikes g",
     stars: 5,
   },
   {
-    review:"Lorem",
+    review: "Lorem",
     client: "Jason H",
     stars: 5,
   },
-  
 ];
 
 const reviews = 5;
@@ -154,7 +166,9 @@ export default function CoachingPage() {
 
   const prevReview = () => {
     setAutoScrollReview(false);
-    setCurrentIndexReview(currentIndexReview == 0 ? reviews - 1 : currentIndexReview - 1);
+    setCurrentIndexReview(
+      currentIndexReview == 0 ? reviews - 1 : currentIndexReview - 1
+    );
   };
 
   return (
@@ -199,8 +213,8 @@ export default function CoachingPage() {
           </Link>
           . If you would like to work together on something else, we can work
           together on a plan that is designed for you. Coaching is inherently a
-          personal experience. Just book a free 30 minute call with me here, and let's
-          see how we can work together.
+          personal experience. Just book a free 30 minute call with me here, and
+          let's see how we can work together.
         </StoryDiv>
 
         <p>
@@ -223,11 +237,19 @@ export default function CoachingPage() {
           >
             <ICFImage />
           </a>
+        </Credentials>
+        <Credentials>
           <a
             href="https://learning.gottman.com/certificates/arzi8e8lml"
             target="_blank"
           >
-            <GottmanImage />
+            <Gottman1Image />
+          </a>
+          <a
+            href="https://learning.gottman.com/certificates/cuanlllssl"
+            target="_blank"
+          >
+            <Gottman2Image />
           </a>
         </Credentials>
 
@@ -236,13 +258,15 @@ export default function CoachingPage() {
           Here's what my clients have to say about working with me:
         </StoryDiv>
         <Carousel>
-           <Chevron onClick={prevReview}>&lt;</Chevron> 
+          <Chevron onClick={prevReview}>&lt;</Chevron>
           <ReviewContainer>
             <StoryDiv>❝{clientReviews[currentIndexReview].review}❞</StoryDiv>
             <ClientName>{clientReviews[currentIndexReview].client}</ClientName>
-            <ClientTitle>{clientReviews[currentIndexReview].stars == 5? "★★★★★": "★★★★"}</ClientTitle>
+            <ClientTitle>
+              {clientReviews[currentIndexReview].stars == 5 ? "★★★★★" : "★★★★"}
+            </ClientTitle>
           </ReviewContainer>
-           <Chevron onClick={nextReview}>&gt;</Chevron> 
+          <Chevron onClick={nextReview}>&gt;</Chevron>
         </Carousel>
 
         <h2>Client Stories</h2>
@@ -259,8 +283,6 @@ export default function CoachingPage() {
           </StoryContainer>
           {/* <Chevron onClick={next}>&gt;</Chevron> */}
         </Carousel>
-
-        
       </Layout>
     </>
   );

@@ -10,4 +10,5 @@ package-lock.json
 
 ## wips
 *.mdx_wip
+*.template
 *.wip_mdx

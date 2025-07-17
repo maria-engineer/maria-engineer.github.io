@@ -86,8 +86,8 @@ export default function TheatrePage({
             <div>{post.date}</div>
           </Listing>
         ))}
-        <Link to="/2024-watching-theatre/">
-          <h3>Shows I'm watching out for in 2024</h3>
+        <Link to="/2025-watching-theatre/">
+          <h3>Shows I'm watching out for in 2025</h3>
         </Link>
         <div>
           <h2>Plays Around the World</h2>
