@@ -26,25 +26,45 @@ export default function FAQPage() {
             target="_blank"
             href="https://coachingfederation.org/get-coaching/coaching-for-me/what-is-coaching/"
           >
-            what is coaching
+            Read the ICF's official definition of coaching
           </a>
           .
         </p>
         <h2>What type of coaching do you do?</h2>
         <p>
-          My coaching could be described as transformational. Which is coaching
-          speech for "I focus on figuring out what's really blocking you and if
-          you even want to do it in the first place, not just surface-level
-          quick fixes." While my goal is to help my clients achieve their goals,
-          and enable them to achieve their dreams, I tend to focus more on the
-          underlying blockers. I believe this will enable my clients to be more
-          self sufficient in the future when they encounter other blockers, than
-          a more surface level, action focused style of coaching.
+          My coaching is transformational. Which is coaching speech for "I focus
+          on figuring out what's really blocking you and if you even want to do
+          it in the first place, not just surface-level quick fixes." While my
+          goal is to help my clients achieve their goals, and enable them to
+          achieve their dreams, I tend to focus more on the underlying blockers.
+          In other words I am here to help you identify obstacles and help you
+          remove them. After that I believe that your own drive will be there to
+          help you grow and succeed. I believe this enables my clients to be
+          more self sufficient in the future when they encounter other blockers,
+          than a more surface level, action focused style of coaching.
         </p>
         <h2>Do I need coaching?</h2>
         <p>
           No. Nobody needs coaching. That being said, I do believe most people
           can benefit from coaching.
+        </p>
+        <h2>What can coaching help me with?</h2>
+        <p>
+          Coaching can help you with a variety of personal and professional
+          challenges. I generally think of coaching as a way to help answer
+          questions. And those questions can be things like: Why am I not happy
+          in my career? How do I resolve this conflict? How can I be a better
+          leader? What should I do next in my life? What is stopping me from
+          writing (writer's block)?
+        </p>
+        <p>
+          These are all questions that exist to be answered in service of a
+          goal. That goal might be writing a novel, finding more joy in your
+          career, moving countries, or dating again after a difficult
+          relationship. As we work together, the goal may shift and change
+          shape, and that's okay. Ultimately, that's what coaching is here for:
+          helping you move toward the future you want with purpose and clarity.
+          And sometimes, it's okay to change what you want.
         </p>
         <h2>Why should I trust you?</h2>
         <p>
