@@ -62,16 +62,48 @@ const Theatre2025 = () => (
         <a href="https://www.sac.or.kr/site/eng/show/show_view?SN=60369#n" target="_blank">
           Shakespeare in Love
         </a>{" "}
-        - July 23, 2024 
+        - July 23, 2024 - ★★★★
+        <br />
+        <a href="https://www.doosanartcenter.com/en/performance/1516" target="_blank">
+          Bare
+        </a>{" "}
+        - September 11, 2024 - ★★★★★
+        <br />
+        <a href="https://themckithanhotel.com/kor/teaser.php" target="_blank">
+          Sleep No More
+        </a>{" "}
+        - October 10, 2024 - ★★★★
+        <br />
+        <a href="https://english.visitkorea.or.kr/svc/sp/kperformance/contentsView.do?menuSn=894&dataSetId=91&vcontsId=201587" target="_blank">
+          Vampire X Hunter
+        </a>{" "}
+        - October 25, 2024 - ★★★
+        <br />
+        <a href="https://triple.global/en/ticket/places/16000325/products/25009941" target="_blank">
+          Shadow
+        </a>{" "}
+        - October 26 , 2024 - ★★★★★
+        <br />
+        <a href="https://triple.global/en/ticket/places/25001155/products/25013145" target="_blank">
+          RENT
+        </a>{" "}
+        - November, 2024 
         <br />
       </p>
       <h2 id="to-book-">To book:</h2>
 
-
-      <h3>Sleep No More</h3>
-      <p>After closing in New York last year</p>
+      <h3>Almond</h3>
+      <p>Loved the book, I can't wait to see the adaptation!</p>
       <p><a
-          href="https://triple.global/en/ticket/places/25000677/products/25008376"
+          href="https://triple.global/en/ticket/genre/MUSICAL/products/25011300"
+          target="_blank"
+        >Tickets</a>
+      </p>
+
+      <h3>Life of Pi</h3>
+      <p>Park Kang Hyun, need I say more?</p>
+      <p><a
+          href="https://triple.global/en/ticket/places/24001634/products/25013804"
           target="_blank"
         >Tickets</a>
       </p>
@@ -80,7 +112,7 @@ const Theatre2025 = () => (
 
       <h2 id="Past years">Past Years</h2>
       <h3 id="years">
-        <Link to="/2023-watching-theatre/">2023</Link>
+        <Link to="/2023-watching-theatre/">2023</Link>{" "}
         <Link to="/2024-watching-theatre/">2024</Link>
       </h3>
     </Layout>
