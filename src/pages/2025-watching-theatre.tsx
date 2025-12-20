@@ -87,7 +87,12 @@ const Theatre2025 = () => (
         <a href="https://triple.global/en/ticket/places/25001155/products/25013145" target="_blank">
           RENT
         </a>{" "}
-        - November, 2024 
+        - November, 2024
+        <br />
+        <a href="https://interparkglobal.com/en/ticket/places/23000860/products/25015688" target="_blank">
+          Bonnie and Clyde
+        </a>{" "}
+        - December, 2024  
         <br />
       </p>
       <h2 id="to-book-">To book:</h2>
