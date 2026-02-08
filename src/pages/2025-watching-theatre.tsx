@@ -87,31 +87,25 @@ const Theatre2025 = () => (
         <a href="https://triple.global/en/ticket/places/25001155/products/25013145" target="_blank">
           RENT
         </a>{" "}
-        - November, 2024
+        - November 15, 2024 - ★★★★★
+        <br />
+        <a href="https://triple.global/en/ticket/genre/MUSICAL/products/25011300" target="_blank">
+          Almond
+        </a>{" "}
+        - November 28, 2025 - ★★★★
+        <br />
+        <a href="https://triple.global/en/ticket/places/24001634/products/25013804" target="_blank">
+          Life of Pi
+        </a>{" "}
+        - December 6, 2025 - ★★★★
         <br />
         <a href="https://interparkglobal.com/en/ticket/places/23000860/products/25015688" target="_blank">
           Bonnie and Clyde
         </a>{" "}
-        - December, 2024  
+        - December 12, 2025 - ★★★★.5
         <br />
       </p>
       <h2 id="to-book-">To book:</h2>
-
-      <h3>Almond</h3>
-      <p>Loved the book, I can't wait to see the adaptation!</p>
-      <p><a
-          href="https://triple.global/en/ticket/genre/MUSICAL/products/25011300"
-          target="_blank"
-        >Tickets</a>
-      </p>
-
-      <h3>Life of Pi</h3>
-      <p>Park Kang Hyun, need I say more?</p>
-      <p><a
-          href="https://triple.global/en/ticket/places/24001634/products/25013804"
-          target="_blank"
-        >Tickets</a>
-      </p>
 
       <h2 id="uncertain-">Uncertain:</h2>
 
