@@ -72,7 +72,7 @@ export default function AuthorCard() {
           >
             ICF
           </a>{" "}
-          coach who combines their experience as a software engineer with their
+          certified coach who combines their experience as a software engineer with their
           ability to build an open and honest environment for their clients in
           order to help people reach the transformative growth they know is
           possible through <Link to="/coaching/">coaching</Link>.

@@ -14,8 +14,37 @@ export function MusicImage() {
   );
 }
 
+export function EmotionsImage() {
+  return (
+    <StaticImage
+      object={"cover"}
+      border-radius={"20px"}
+      width={240}
+      height={200}
+      src={"./wheel.png"}
+      alt={"Feelings Wheel snippet"}
+    />
+  );
+}
+export function WheelImage() {
+  return (
+    <StaticImage
+      object={"cover"}
+      border-radius={"20px"}
+      width={240}
+      height={200}
+      src={"./wheel_of_anything.png"}
+      alt={"An example filled in Wheel of Life."}
+    />
+  );
+}
+
 export function BarefootImage() {
   return <StaticImage height={100} src={"./trained-coach-badge.png"} alt={"Barefoot Coaching Training Completion badge"}/>;
+}
+
+export function BarefootGriefImage() {
+  return <StaticImage height={100} src={"./grief-loss.png"} alt={"Barefoot Grief and Loss Training Completion badge"}/>;
 }
 
 export function ICFImage() {

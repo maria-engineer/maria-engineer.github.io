@@ -5,7 +5,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Credentials, LinkButton } from "../components/commonStyles";
-import { BarefootImage, ICFImage } from "../images/image";
+import { BarefootGriefImage, BarefootImage, ICFImage } from "../images/image";
 
 
 
@@ -21,7 +21,7 @@ export default function IndexPage(): JSX.Element {
           bad—as fuel for change. My coaching is rooted in my own journey of
           navigating big transitions and challenges, from career shifts to
           moving between countries. I've learned firsthand that the path to
-          meaningful change isn't about following a preset formula—it's about
+          meaningful change isn't about following a preset formula. It's about
           uncovering what's truly important to you, and then aligning your
           actions with those values.{" "}
         </p>
@@ -64,6 +64,9 @@ export default function IndexPage(): JSX.Element {
         <Credentials>
           <a href="https://barefootcoaching.co.uk" target="_blank">
             <BarefootImage />
+          </a>
+          <a href="https://barefootcoaching.co.uk/certificate-in-coaching-for-grief-and-loss/" target="_blank">
+            <BarefootGriefImage />
           </a>
           <a
             href="https://www.credly.com/badges/eb2603e4-cadb-498c-87e5-a7770d14cdd4/public_url"

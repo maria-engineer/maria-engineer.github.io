@@ -1,0 +1,51 @@
+---
+slug: "/blog/copy-paste/"
+short: "Copy Paste"
+date: "2026-09-30"
+title: "Copy Paste Engineering"
+category: "engineer"
+subcategory: "opinion"
+keywords: ["software engineering", "LLMs", "vibe coding"]
+description: "A guide obtained through trial and error on how to identify a good manager in interviews. It includes questions and what to listen for."
+prev: "/blog/find-manager/"
+next: ""
+---
+
+import AuthorCard from "../../components/authorCard";
+import Footnote from '../../components/footnote';
+
+# Or why LLMs do a good job at coding, and why they don’t
+
+I have always been better at reading code than writing it. Sure, I can write code, but compared to a lot of my former colleagues I am slower when it comes to coding from scratch anything other than pure logic or algorithms. If I haven’t used a specific API in a long time I can just not remember how to write it, though I would recognise it and know what it does as soon as I see it. It’s strange, but to me it makes sense. After all, have you not noticed how when you learn a new language you find that while you can understand, you lose it when you try to speak?<Footnote presentation="0">This is because the parts of the brain responsible for understanding and producing language are actually in different areas. Wernicke’s area handles comprehension, while Broca’s area handles speech production. So you basically need to learn the same thing twice.</Footnote>
+
+But that has never stopped me. I have often had the most contributions in my team. Over time I have managed to develop a coding style that puts my strengths to use. Especially at big companies like Facebook and Google, where you have access to an absolutely massive codebase, I find that it can work even better than regular engineering. I call it copy paste engineering.
+
+## Why it works
+
+I am of the belief that there is nothing new in the world. Pretty much everything has been done before. Now, whether you have access to what has been done before… that is a different question. But, I was in the fortunate situation of working in places where the code at my disposal was extensive.
+
+That doesn’t mean that what you are building isn’t new, just that the composing parts aren’t. Unless you’re at the cutting edge of research<Footnote presentation="1">And even there I have doubts. While innovation looks new when presented, a great deal of it doesn’t show the iteration steps that come from combining existing ideas in novel ways until the new thing is unrecognisable. So how much of it is actually new new… I don’t know. I am not a researcher.</Footnote> every single element of what you’re trying to do has been done before. In copy paste engineering the trick is to find out where, gather the pieces, and put them together to solve your problem. I think of them like Lego bricks. Gather those bricks from across the codebase and assemble something that hasn’t been built before. If I’m building a sports car, I may just take the whole V6 engine from a Bugatti I previously built. The less effort I need to make the thing I wanna build, the better.
+
+It works because I understand my problem and its component parts. I have broken it down into sub-problems that someone, somewhere, has already solved. Ideally, I can abstract the core away into a reusable function, but sometimes the pieces are too small or too far apart to make abstraction worthwhile. The end product may seem impressive, but only if you didn’t see the steps required to build it along the way.
+
+## How it fails
+
+The main reason this fails is a lack of understanding of the pieces being assembled. You can only be as correct as your understanding of the content you are copying. This is where junior engineers may get caught out if they copy paste engineer rashly<Footnote presentation="2">
+I think this is where copy paste engineering gets a bad reputation. It is often used as a rushed way to avoid building something oneself, rather than used tactically.</Footnote>, and where LLMs get caught out too, as they don’t have a conceptual understanding of the code they produce, but a statistical one. And sadly, statistically people make mistakes, and if we copy paste their solutions without understanding, we just propagate the mistake further.
+
+I don’t think it’s enough to know what code says it does<Footnote presentation="3">How often do you see up to date documentation? Yeah, thought so.</Footnote>, you also need to read it and confirm that it actually does what it claims. But we will always be limited by the depth of our own understanding. That’s fine. Even simple algorithms, like binary search (why your binary search is probably wrong), can have subtle bugs that catch us out, which is why it’s best to rely on widely used libraries. Just don’t trust too readily, verify as much as possible.
+
+Understanding the problem should be taken as a given. Without it we cannot break it down into component parts. That being said, I don’t think that’s ever stopped anyone. I am all too familiar with the “throw stuff at the wall until something sticks” style of engineering. Without understanding, we will just get something that looks right, and whether it actually works is really up to chance. But chance is sometimes correct.
+
+I see LLMs similarly. The main difference from an inexperienced engineer is that they can iterate and throw things at the wall at much greater speeds, and through a fast loop of testing there is a progressively higher chance they land on something that actually works.
+
+<AuthorCard/>
+
+---
+<sup>0</sup> This is because the parts of the brain responsible for understanding and producing language are actually in different areas. Wernicke’s area handles comprehension, while Broca’s area handles speech production. So you basically need to learn the same thing twice.
+
+<sup>1</sup> And even there I have doubts. While innovation looks new when presented, a great deal of it doesn’t show the iteration steps that come from combining existing ideas in novel ways until the new thing is unrecognisable. So how much of it is actually new new… I don’t know. I am not a researcher.
+
+<sup>2</sup> I think this is where copy paste engineering gets a bad reputation. It is often used as a rushed way to avoid building something oneself, rather than used tactically.
+
+<sup>3</sup> How often do you see up to date documentation? Yeah, thought so.

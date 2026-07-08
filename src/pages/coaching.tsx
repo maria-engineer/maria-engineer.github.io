@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import { Link } from "gatsby";
 import { Credentials, LinkButton } from "../components/commonStyles";
 import {
+  BarefootGriefImage,
   BarefootImage,
   Gottman1Image,
   Gottman2Image,
@@ -167,7 +168,7 @@ export default function CoachingPage() {
   const prevReview = () => {
     setAutoScrollReview(false);
     setCurrentIndexReview(
-      currentIndexReview == 0 ? reviews - 1 : currentIndexReview - 1
+      currentIndexReview == 0 ? reviews - 1 : currentIndexReview - 1,
     );
   };
 
@@ -211,7 +212,8 @@ export default function CoachingPage() {
           <Link to="/coaching-reinvention/">
             Reinvent Yourself After a Major Life Change
           </Link>
-          . If you would like to work together on something else, we can work
+          . I also am a certified grief and loss coach specialising in divorce and provide support for those navigating the challenges of separation or considering separation.</StoryDiv>
+          <StoryDiv>If you would like to work together on something else, we can work
           together on a plan that is designed for you. Coaching is inherently a
           personal experience. Just book a free 30 minute call with me here, and
           let's see how we can work together.
@@ -236,6 +238,12 @@ export default function CoachingPage() {
             target="_blank"
           >
             <ICFImage />
+          </a>
+          <a
+            href="https://barefootcoaching.co.uk/certificate-in-coaching-for-grief-and-loss/"
+            target="_blank"
+          >
+            <BarefootGriefImage />
           </a>
         </Credentials>
         <Credentials>

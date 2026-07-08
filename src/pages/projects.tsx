@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { MusicImage } from "../images/image";
+import { EmotionsImage, MusicImage, WheelImage } from "../images/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGift } from "@fortawesome/fontawesome-free-solid";
@@ -65,6 +65,30 @@ export default function ProjectPage() {
               A small project I did when I was learning music theory and how to
               play trumpet. I used it in order to learn more about scales and to
               enable me to more easily improvise on jazz standards.
+            </ProjectDescription>
+          </ProjectCard>
+          <ProjectCard
+            target="_blank"
+            key={"Feelings wheel"}
+            href={"https://emotions.maria.engineer"}
+          >
+            <EmotionsImage />
+            <ProjectTitle>Feelings Wheel</ProjectTitle>
+            <ProjectDescription>
+              Small writing and journaling exercise based on the Feelings Wheel
+              by Geoffrey Roberts.
+            </ProjectDescription>
+          </ProjectCard>
+          <ProjectCard
+            target="_blank"
+            key={"Feelings wheel"}
+            href={"https://wheel.maria.engineer"}
+          >
+            <WheelImage />
+            <ProjectTitle>Wheel of Anything</ProjectTitle>
+            <ProjectDescription>
+              A small project digitising a commonly used coaching tool. Playing around
+              with prompt engineering and WebLLM.
             </ProjectDescription>
           </ProjectCard>
         </div>
